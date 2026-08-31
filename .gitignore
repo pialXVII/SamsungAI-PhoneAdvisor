@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Environment — never commit real credentials
+.env
+
+# Generated data
+data/vector_index/
+data/*.db
+
+# Model caches
+.cache/
+*.safetensors
+*.bin
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Keep the scrape snapshot committed so the project can be rebuilt offline:
+!data/scraped_phones.json

@@ -1,0 +1,5440 @@
+{
+  "scraped_at": "2026-08-31T20:08:03.964971",
+  "source": "GSMArena",
+  "count": 15,
+  "phones": [
+    {
+      "name": "Samsung Galaxy S25 Ultra",
+      "slug": "samsung_galaxy_s25_ultra-13322",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s25_ultra-13322.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s25-ultra-sm-s938.jpg",
+      "announced": "2025, January 22",
+      "status": "Available. Released 2025, February 03",
+      "release_year": 2025,
+      "dimensions": "162.8 x 77.6 x 8.2 mm (6.41 x 3.06 x 0.32 in)",
+      "weight": "218 g (7.69 oz)",
+      "weight_g": 218.0,
+      "build": "Glass front (Corning Gorilla Armor 2), glass back (Gorilla Glass Victus 2), titanium frame (grade 5)",
+      "sim": "Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT · Nano-SIM + eSIM + eSIM (max 2 at a time) - USA · Nano-SIM + Nano-SIM - CN",
+      "display_type": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)",
+      "display_size": "6.9 inches, 116.9 cm 2 (~92.5% screen-to-body ratio)",
+      "display_size_inches": 6.9,
+      "display_resolution": "1440 x 3120 pixels, 19.5:9 ratio (~498 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Armor 2, Mohs level 6",
+      "os": "Android 15, up to 7 major OS updates, One UI 8",
+      "chipset": "Qualcomm SM8750-AC Snapdragon 8 Elite (3 nm)",
+      "cpu": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)",
+      "gpu": "Adreno 830 (1200 MHz)",
+      "card_slot": "No",
+      "internal_memory": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 1TB 16GB RAM",
+      "max_ram_gb": 16,
+      "max_storage_gb": 1024,
+      "main_camera_setup": "Quad",
+      "main_camera": "200 MP, f/1.7, 24mm (wide), 1/1.3\", 0.6µm, multi-directional PDAF, OIS 10 MP, f/2.4, 67mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom 50 MP, f/3.4, 111mm (periscope telephoto), 1/2.52\", 0.7µm, PDAF, OIS, 5x optical zoom 50 MP, f/1.9, 120˚ (ultrawide), 1/2.5\", 0.7µm, dual pixel PDAF, Super Steady video",
+      "main_camera_mp": 200.0,
+      "main_camera_features": "Laser AF, Best Face, LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24/30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps, 10-bit HDR, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF",
+      "selfie_camera_mp": 12.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.4, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, DisplayPort 1.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 5000 mAh",
+      "battery_capacity_mah": 5000,
+      "charging": "45W wired, PD3.0, 65% in 30 min 15W wireless (Qi2 Ready) 4.5W reverse wireless",
+      "charging_watts": 45.0,
+      "colors": "Titanium Silver Blue, Titanium Black, Titanium White Silver, Titanium Gray, Titanium Jade Green, Titanium Jet Black, Titanium Pink Gold",
+      "models": "SM-S938B, SM-S938B/DS, SM-S938U, SM-S938U1, SM-S938W, SM-S938N, SM-S9380, SM-S938E, SM-S938E/DS",
+      "price_text": "$ 688.97 / € 767.24 / £ 586.95 / ₹ 97,999",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 48, 66, 71 - USA unlocked"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 2, 5, 7, 25, 28, 41, 66, 71, 77, 78, 257, 258, 260, 261 SA/NSA/Sub6/mmWave - USA unlocked"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE (CA), 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2025, January 22"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2025, February 03"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "162.8 x 77.6 x 8.2 mm (6.41 x 3.06 x 0.32 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "218 g (7.69 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Corning Gorilla Armor 2), glass back (Gorilla Glass Victus 2), titanium frame (grade 5)"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT · Nano-SIM + eSIM + eSIM (max 2 at a time) - USA · Nano-SIM + Nano-SIM - CN"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Stylus"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.9 inches, 116.9 cm 2 (~92.5% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1440 x 3120 pixels, 19.5:9 ratio (~498 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Armor 2, Mohs level 6"
+        },
+        {
+          "category": "Display",
+          "name": "Additional 1",
+          "value": "DX anti-reflective coating"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 15, up to 7 major OS updates, One UI 8"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8750-AC Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 830 (1200 MHz)"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 1TB 16GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Quad",
+          "value": "200 MP, f/1.7, 24mm (wide), 1/1.3\", 0.6µm, multi-directional PDAF, OIS 10 MP, f/2.4, 67mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom 50 MP, f/3.4, 111mm (periscope telephoto), 1/2.52\", 0.7µm, PDAF, OIS, 5x optical zoom 50 MP, f/1.9, 120˚ (ultrawide), 1/2.5\", 0.7µm, dual pixel PDAF, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "Laser AF, Best Face, LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24/30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps, 10-bit HDR, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR, HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.4, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO, QZSS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, DisplayPort 1.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support) Ultra Wideband (UWB) support"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 5000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "45W wired, PD3.0, 65% in 30 min 15W wireless (Qi2 Ready) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Titanium Silver Blue, Titanium Black, Titanium White Silver, Titanium Gray, Titanium Jade Green, Titanium Jet Black, Titanium Pink Gold"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S938B, SM-S938B/DS, SM-S938U, SM-S938U1, SM-S938W, SM-S938N, SM-S9380, SM-S938E, SM-S938E/DS"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.26 W/kg (head) 0.64 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "1.25 W/kg (head) 1.42 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 688.97 / € 767.24 / £ 586.95 / ₹ 97,999"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 2207809 (v10) GeekBench: 9846 (v6) 3DMark: 6687 (Wild Life Extreme)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1417 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "24.6 LUFS (Very good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 14:49h"
+        },
+        {
+          "category": "EU LABEL",
+          "name": "Energy",
+          "value": "Class B"
+        },
+        {
+          "category": "EU LABEL",
+          "name": "Battery",
+          "value": "44:54h endurance, 2000 cycles"
+        },
+        {
+          "category": "EU LABEL",
+          "name": "Free fall",
+          "value": "Class A (270 falls)"
+        },
+        {
+          "category": "EU LABEL",
+          "name": "Repairability",
+          "value": "Class C"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 688.97,
+          "raw_text": "$ 688.97",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 767.24,
+          "raw_text": "€ 767.24",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 586.95,
+          "raw_text": "£ 586.95",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "INR",
+          "amount": 97999.0,
+          "raw_text": "₹ 97,999",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S25",
+      "slug": "samsung_galaxy_s25-13610",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s25-13610.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s25-sm-s931.jpg",
+      "announced": "2025, January 22",
+      "status": "Available. Released 2025, February 03",
+      "release_year": 2025,
+      "dimensions": "146.9 x 70.5 x 7.2 mm (5.78 x 2.78 x 0.28 in)",
+      "weight": "162 g (5.71 oz)",
+      "weight_g": 162.0,
+      "build": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT · Nano-SIM + eSIM + eSIM (max 2 at a time) - USA · Nano-SIM + Nano-SIM - CN",
+      "display_type": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)",
+      "display_size": "6.2 inches, 94.4 cm 2 (~91.1% screen-to-body ratio)",
+      "display_size_inches": 6.2,
+      "display_resolution": "1080 x 2340 pixels, 19.5:9 ratio (~416 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass Victus 2, Mohs level 5",
+      "os": "Android 15, up to 7 major OS updates, One UI 8",
+      "chipset": "Qualcomm SM8750-AC Snapdragon 8 Elite (3 nm)",
+      "cpu": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)",
+      "gpu": "Adreno 830 (1200 MHz)",
+      "card_slot": "No",
+      "internal_memory": "128GB 12GB RAM, 256GB 12GB RAM, 512GB 12GB RAM",
+      "max_ram_gb": 12,
+      "max_storage_gb": 512,
+      "main_camera_setup": "Triple",
+      "main_camera": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 67mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video",
+      "main_camera_mp": 50.0,
+      "main_camera_features": "Best Face, LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, 10-bit HDR, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF",
+      "selfie_camera_mp": 12.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.4, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, DisplayPort 1.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 4000 mAh",
+      "battery_capacity_mah": 4000,
+      "charging": "25W wired, PD3.0, 50% in 30 min 15W wireless (Qi2 Ready) 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Icy Blue, Mint, Navy, Silver Shadow, Pink Gold, Coral Red, Blue Black",
+      "models": "SM-S931B, SM-S931B/DS, SM-S931U, SM-S931U1, SM-S931W, SM-S931N, SM-S9310, SM-S931E, SM-S931E/DS",
+      "price_text": "$ 433.44 / € 516.61 / £ 406.50 / ₹ 61,470",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 48, 66, 71 - USA unlocked"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 2, 5, 7, 25, 28, 41, 66, 71, 77, 78, 257, 258, 260, 261 SA/NSA/Sub6/mmWave - USA unlocked"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE (CA), 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2025, January 22"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2025, February 03"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "146.9 x 70.5 x 7.2 mm (5.78 x 2.78 x 0.28 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "162 g (5.71 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT · Nano-SIM + eSIM + eSIM (max 2 at a time) - USA · Nano-SIM + Nano-SIM - CN"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Armor Aluminum 2"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.2 inches, 94.4 cm 2 (~91.1% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1080 x 2340 pixels, 19.5:9 ratio (~416 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass Victus 2, Mohs level 5"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 15, up to 7 major OS updates, One UI 8"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8750-AC Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 830 (1200 MHz)"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 12GB RAM, 256GB 12GB RAM, 512GB 12GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 3.1 - 128GB only UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 67mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "Best Face, LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, 10-bit HDR, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR, HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.4, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO, QZSS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, DisplayPort 1.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support)"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 4000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, PD3.0, 50% in 30 min 15W wireless (Qi2 Ready) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Icy Blue, Mint, Navy, Silver Shadow, Pink Gold, Coral Red, Blue Black"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S931B, SM-S931B/DS, SM-S931U, SM-S931U1, SM-S931W, SM-S931N, SM-S9310, SM-S931E, SM-S931E/DS"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.13 W/kg (head) 0.92 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "1.29 W/kg (head) 1.36 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 433.44 / € 516.61 / £ 406.50 / ₹ 61,470"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 2193701 (v10) GeekBench: 10050 (v6) 3DMark: 6755 (Wild Life Extreme)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1395 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "26.1 LUFS (Good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 13:09h"
+        },
+        {
+          "category": "EU LABEL",
+          "name": "Energy",
+          "value": "Class B"
+        },
+        {
+          "category": "EU LABEL",
+          "name": "Battery",
+          "value": "37:16h endurance, 2000 cycles"
+        },
+        {
+          "category": "EU LABEL",
+          "name": "Free fall",
+          "value": "Class A (270 falls)"
+        },
+        {
+          "category": "EU LABEL",
+          "name": "Repairability",
+          "value": "Class C"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 433.44,
+          "raw_text": "$ 433.44",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 516.61,
+          "raw_text": "€ 516.61",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 406.5,
+          "raw_text": "£ 406.50",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "INR",
+          "amount": 61470.0,
+          "raw_text": "₹ 61,470",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy Z Fold6",
+      "slug": "samsung_galaxy_z_fold6-13147",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_fold6-13147.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold6.jpg",
+      "announced": "2024, July 10",
+      "status": "Available. Released 2024, July 24",
+      "release_year": 2024,
+      "dimensions": "Unfolded: 153.5 x 132.6 x 5.6 mm Folded: 153.5 x 68.1 x 12.1 mm",
+      "weight": "239 g (8.43 oz)",
+      "weight_g": 239.0,
+      "build": "Glass front (Gorilla Glass Victus 2) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "sim": "Nano-SIM + eSIM · eSIM + eSIM · Nano-SIM + Nano-SIM (SM-F9560)",
+      "display_type": "Foldable Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)",
+      "display_size": "7.6 inches, 185.2 cm 2 (~91.0% screen-to-body ratio)",
+      "display_size_inches": 7.6,
+      "display_resolution": "1856 x 2160 pixels (~374 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": null,
+      "os": "Android 14, up to 7 major OS updates, One UI 6.1.1",
+      "chipset": "Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm)",
+      "cpu": "8-core (1x3.39GHz Cortex-X4 & 3x3.1GHz Cortex-A720 & 2x2.9GHz Cortex-A720 & 2x2.2GHz Cortex-A520)",
+      "gpu": "Adreno 750 (1 GHz)",
+      "card_slot": "No",
+      "internal_memory": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM",
+      "max_ram_gb": 12,
+      "max_storage_gb": 1024,
+      "main_camera_setup": "Triple",
+      "main_camera": "50 MP, f/1.8, 23mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 66mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 123˚, 12mm (ultrawide), 1/3.2\", 1.12µm",
+      "main_camera_mp": 50.0,
+      "main_camera_features": "LED flash, HDR, panorama",
+      "main_camera_video": "8K@30fps, 4K@60fps, 1080p@60/120/240fps (gyro-EIS), HDR10+",
+      "selfie_camera": "4 MP, f/1.8, 26mm (wide), 1/3.0\", 2.0µm, under display Cover camera: 10 MP, f/2.2, 24mm (wide), 1/3.0\", 1.22µm",
+      "selfie_camera_mp": 4.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30/60fps, gyro-EIS",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE, aptX HD",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Po 4400 mAh",
+      "battery_capacity_mah": 4400,
+      "charging": "25W wired, QC2.0, 50% in 30 min 15W wireless 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Navy, Silver Shadow, Pink, Black, White",
+      "models": "SM-F956B, SM-F956B/DS, SM-F956U, SM-F956U1, SM-F956N, SM-F956W, SM-F9560",
+      "price_text": "$ 1,088.99 / € 690.00 / £ 550.00",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 2, 5, 7, 25, 28, 41, 66, 71, 77, 78, 257, 258, 260, 261 SA/NSA/Sub6/mmWave - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE, 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2024, July 10"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2024, July 24"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "Unfolded: 153.5 x 132.6 x 5.6 mm Folded: 153.5 x 68.1 x 12.1 mm"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "239 g (8.43 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus 2) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · eSIM + eSIM · Nano-SIM + Nano-SIM (SM-F9560)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP48 dust and water resistant (dust > 1mm; immersible up to 1.5m for 30 min) Armor Aluminum Stylus support"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Foldable Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "7.6 inches, 185.2 cm 2 (~91.0% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1856 x 2160 pixels (~374 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Additional 1",
+          "value": "Cover display: Dynamic LTPO AMOLED 2X, 120Hz, 2600 nits (peak), Corning Gorilla Glass Victus 2 6.3 inches, 968 x 2376 pixels, 410 ppi"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 14, up to 7 major OS updates, One UI 6.1.1"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "8-core (1x3.39GHz Cortex-X4 & 3x3.1GHz Cortex-A720 & 2x2.9GHz Cortex-A720 & 2x2.2GHz Cortex-A520)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 750 (1 GHz)"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "50 MP, f/1.8, 23mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 66mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 123˚, 12mm (ultrawide), 1/3.2\", 1.12µm"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@30fps, 4K@60fps, 1080p@60/120/240fps (gyro-EIS), HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "4 MP, f/1.8, 26mm (wide), 1/3.0\", 2.0µm, under display Cover camera: 10 MP, f/2.2, 24mm (wide), 1/3.0\", 1.22µm"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE, aptX HD"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GALILEO, GLONASS, BDS, QZSS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX (desktop experience support) Ultra Wideband (UWB) support"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Po 4400 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, QC2.0, 50% in 30 min 15W wireless 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Navy, Silver Shadow, Pink, Black, White"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-F956B, SM-F956B/DS, SM-F956U, SM-F956U1, SM-F956N, SM-F956W, SM-F9560"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "1.24 W/kg (head) 1.39 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 1,088.99 / € 690.00 / £ 550.00"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 1608744 (v10) GeekBench: 6757 (v6) 3DMark: 4644 (Wild Life Extreme)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1630 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "26.5 LUFS (Good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 11:31h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 1088.99,
+          "raw_text": "$ 1,088.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 690.0,
+          "raw_text": "€ 690.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 550.0,
+          "raw_text": "£ 550.00",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S24 Ultra",
+      "slug": "samsung_galaxy_s24_ultra-12771",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s24_ultra-12771.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra-5g-sm-s928-stylus.jpg",
+      "announced": "2024, January 17",
+      "status": "Available. Released 2024, January 24",
+      "release_year": 2024,
+      "dimensions": "162.3 x 79 x 8.6 mm (6.39 x 3.11 x 0.34 in)",
+      "weight": "232 g or 233 g (8.18 oz)",
+      "weight_g": 232.0,
+      "build": "Glass front (Corning Gorilla Armor), glass back (Corning Gorilla Armor), titanium frame (grade 2)",
+      "sim": "Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT · Nano-SIM + eSIM + eSIM (max 2 at a time) - USA · Nano-SIM + Nano-SIM - CN",
+      "display_type": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)",
+      "display_size": "6.8 inches, 113.5 cm 2 (~88.5% screen-to-body ratio)",
+      "display_size_inches": 6.8,
+      "display_resolution": "1440 x 3120 pixels, 19.5:9 ratio (~505 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Armor",
+      "os": "Android 14, up to 7 major OS updates, One UI 8.5",
+      "chipset": "Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm)",
+      "cpu": "8-core (1x3.39GHz Cortex-X4 & 3x3.1GHz Cortex-A720 & 2x2.9GHz Cortex-A720 & 2x2.2GHz Cortex-A520)",
+      "gpu": "Adreno 750 (1 GHz)",
+      "card_slot": "No",
+      "internal_memory": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM",
+      "max_ram_gb": 12,
+      "max_storage_gb": 1024,
+      "main_camera_setup": "Quad",
+      "main_camera": "200 MP, f/1.7, 24mm (wide), 1/1.3\", 0.6µm, multi-directional PDAF, OIS 10 MP, f/2.4, 67mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom 50 MP, f/3.4, 111mm (periscope telephoto), 1/2.52\", 0.7µm, PDAF, OIS, 5x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF, Super Steady video",
+      "main_camera_mp": 200.0,
+      "main_camera_features": "Laser AF, LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24/30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF",
+      "selfie_camera_mp": 12.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, DisplayPort 1.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 5000 mAh",
+      "battery_capacity_mah": 5000,
+      "charging": "45W wired, PD3.0, 65% in 30 min 15W wireless (Qi) 4.5W reverse wireless",
+      "charging_watts": 45.0,
+      "colors": "Titanium Black, Titanium Gray, Titanium Violet, Titanium Yellow, Titanium Blue, Titanium Green, Titanium Orange",
+      "models": "SM-S928B, SM-S928B/DS, SM-S928U, SM-S928U1, SM-S928W, SM-S928N, SM-S9280, SM-S928E, SM-S928E/DS",
+      "price_text": "$ 548.00 / € 613.35 / £ 490.00 / ₹ 99,990",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 7, 25, 28, 41, 66, 71, 78, 257, 258, 260, 261 SA/NSA/Sub6/mmWave - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE (CA), 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2024, January 17"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2024, January 24"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "162.3 x 79 x 8.6 mm (6.39 x 3.11 x 0.34 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "232 g or 233 g (8.18 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Corning Gorilla Armor), glass back (Corning Gorilla Armor), titanium frame (grade 2)"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT · Nano-SIM + eSIM + eSIM (max 2 at a time) - USA · Nano-SIM + Nano-SIM - CN"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Stylus (Bluetooth integration, accelerometer, gyro)"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.8 inches, 113.5 cm 2 (~88.5% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1440 x 3120 pixels, 19.5:9 ratio (~505 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Armor"
+        },
+        {
+          "category": "Display",
+          "name": "Additional 1",
+          "value": "DX anti-reflective coating"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 14, up to 7 major OS updates, One UI 8.5"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "8-core (1x3.39GHz Cortex-X4 & 3x3.1GHz Cortex-A720 & 2x2.9GHz Cortex-A720 & 2x2.2GHz Cortex-A520)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 750 (1 GHz)"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Quad",
+          "value": "200 MP, f/1.7, 24mm (wide), 1/1.3\", 0.6µm, multi-directional PDAF, OIS 10 MP, f/2.4, 67mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom 50 MP, f/3.4, 111mm (periscope telephoto), 1/2.52\", 0.7µm, PDAF, OIS, 5x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "Laser AF, LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24/30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR, HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO, QZSS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, DisplayPort 1.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support) Ultra Wideband (UWB) support"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 5000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "45W wired, PD3.0, 65% in 30 min 15W wireless (Qi) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Titanium Black, Titanium Gray, Titanium Violet, Titanium Yellow, Titanium Blue, Titanium Green, Titanium Orange"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S928B, SM-S928B/DS, SM-S928U, SM-S928U1, SM-S928W, SM-S928N, SM-S9280, SM-S928E, SM-S928E/DS"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.26 W/kg (head) 0.62 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "1.06 W/kg (head) 1.30 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 548.00 / € 613.35 / £ 490.00 / ₹ 99,990"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 1453497 (v9), 1823822 (v10) GeekBench: 7076 (v6) 3DMark: 4983 (Wild Life Extreme)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1447 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "24.6 LUFS (Very good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 13:49h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 548.0,
+          "raw_text": "$ 548.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 613.35,
+          "raw_text": "€ 613.35",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 490.0,
+          "raw_text": "£ 490.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "INR",
+          "amount": 99990.0,
+          "raw_text": "₹ 99,990",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S24",
+      "slug": "samsung_galaxy_s24-12773",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s24-12773.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-5g-sm-s921.jpg",
+      "announced": "2024, January 17",
+      "status": "Available. Released 2024, January 24",
+      "release_year": 2024,
+      "dimensions": "147 x 70.6 x 7.6 mm (5.79 x 2.78 x 0.30 in)",
+      "weight": "167 g or 168 g (5.89 oz)",
+      "weight_g": 167.0,
+      "build": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT · Nano-SIM + eSIM + eSIM (max 2 at a time) - USA · Nano-SIM + Nano-SIM - CN",
+      "display_type": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)",
+      "display_size": "6.2 inches, 94.4 cm 2 (~90.9% screen-to-body ratio)",
+      "display_size_inches": 6.2,
+      "display_resolution": "1080 x 2340 pixels, 19.5:9 ratio (~416 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass Victus 2",
+      "os": "Android 14, up to 7 major OS updates, One UI 8.5",
+      "chipset": "Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm) - USA/Canada/China Exynos 2400 (4 nm) - International",
+      "cpu": "8-core (1x3.39GHz Cortex-X4 & 3x3.1GHz Cortex-A720 & 2x2.9GHz Cortex-A720 & 2x2.2GHz Cortex-A520) 10-core (1x3.2GHz Cortex-X4 & 2x2.9GHz Cortex-A720 & 3x2.6GHz Cortex-A720 & 4x1.95GHz Cortex-A520)",
+      "gpu": "Adreno 750 (1 GHz) - USA/Canada/China Xclipse 940 - International",
+      "card_slot": "No",
+      "internal_memory": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM, 512GB 8GB RAM",
+      "max_ram_gb": 12,
+      "max_storage_gb": 512,
+      "main_camera_setup": "Triple",
+      "main_camera": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 67mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video",
+      "main_camera_mp": 50.0,
+      "main_camera_features": "LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF",
+      "selfie_camera_mp": 12.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, DisplayPort 1.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 4000 mAh",
+      "battery_capacity_mah": 4000,
+      "charging": "25W wired, PD3.0, 50% in 30 min 15W wireless (Qi) 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Onyx Black, Marble Grey, Cobalt Violet, Amber Yellow, Jade Green, Sandstone Orange, Sapphire Blue",
+      "models": "SM-S921B, SM-S921B/DS, SM-S921U, SM-S921U1, SM-S921W, SM-S921N, SM-S9210, SM-S921E, SM-S921E/DS",
+      "price_text": "$ 335.94 / € 395.57 / £ 295.00 / ₹ 54,499",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 7, 25, 28, 41, 66, 71, 78, 257, 258, 260, 261 SA/NSA/Sub6/mmWave - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE (CA), 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2024, January 17"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2024, January 24"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "147 x 70.6 x 7.6 mm (5.79 x 2.78 x 0.30 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "167 g or 168 g (5.89 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT · Nano-SIM + eSIM + eSIM (max 2 at a time) - USA · Nano-SIM + Nano-SIM - CN"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Armor Aluminum 2"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.2 inches, 94.4 cm 2 (~90.9% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1080 x 2340 pixels, 19.5:9 ratio (~416 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass Victus 2"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 14, up to 7 major OS updates, One UI 8.5"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm) - USA/Canada/China Exynos 2400 (4 nm) - International"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "8-core (1x3.39GHz Cortex-X4 & 3x3.1GHz Cortex-A720 & 2x2.9GHz Cortex-A720 & 2x2.2GHz Cortex-A520) 10-core (1x3.2GHz Cortex-X4 & 2x2.9GHz Cortex-A720 & 3x2.6GHz Cortex-A720 & 4x1.95GHz Cortex-A520)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 750 (1 GHz) - USA/Canada/China Xclipse 940 - International"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM, 512GB 8GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 3.1 - 128GB only UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 67mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR, HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO, QZSS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, DisplayPort 1.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support)"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 4000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, PD3.0, 50% in 30 min 15W wireless (Qi) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Onyx Black, Marble Grey, Cobalt Violet, Amber Yellow, Jade Green, Sandstone Orange, Sapphire Blue"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S921B, SM-S921B/DS, SM-S921U, SM-S921U1, SM-S921W, SM-S921N, SM-S9210, SM-S921E, SM-S921E/DS"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.23 W/kg (head) 1.10 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "0.87 W/kg (head) 1.35 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 335.94 / € 395.57 / £ 295.00 / ₹ 54,499"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 1218977 (v9), 1696727 (v10) GeekBench: 5833 (v5), 6747 (v6) 3DMark: 4183 (Wild Life Extreme)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1401 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "25.2 LUFS (Very good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 12:06h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 335.94,
+          "raw_text": "$ 335.94",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 395.57,
+          "raw_text": "€ 395.57",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 295.0,
+          "raw_text": "£ 295.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "INR",
+          "amount": 54499.0,
+          "raw_text": "₹ 54,499",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S23 FE",
+      "slug": "samsung_galaxy_s23_fe-12520",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s23_fe-12520.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-fe.jpg",
+      "announced": "2023, October 04",
+      "status": "Available. Released 2023, October 05",
+      "release_year": 2023,
+      "dimensions": "158 x 76.5 x 8.2 mm (6.22 x 3.01 x 0.32 in)",
+      "weight": "209 g (7.37 oz)",
+      "weight_g": 209.0,
+      "build": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), aluminum frame",
+      "sim": "Nano-SIM · Nano-SIM + Nano-SIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)",
+      "display_type": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1450 nits (peak)",
+      "display_size": "6.4 inches, 100.5 cm 2 (~83.2% screen-to-body ratio)",
+      "display_size_inches": 6.4,
+      "display_resolution": "1080 x 2340 pixels, 19.5:9 ratio (~403 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass 5",
+      "os": "Android 13, up to 4 major OS updates, One UI 8",
+      "chipset": "Exynos 2200 (4 nm) - International Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm) - USA",
+      "cpu": "Octa-core (1x2.8 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510) - International Octa-core (1x3.00 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510) - USA",
+      "gpu": "Xclipse 920 - International Adreno 730 - USA",
+      "card_slot": "No",
+      "internal_memory": "128GB 8GB RAM, 256GB 8GB RAM",
+      "max_ram_gb": 8,
+      "max_storage_gb": 256,
+      "main_camera_setup": "Triple",
+      "main_camera": "50 MP, f/1.8, 23mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF, OIS 8 MP, f/2.4, 76mm (telephoto), 1/4.5\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 123˚ (ultrawide), 1/3.0\", 1.12µm",
+      "main_camera_mp": 50.0,
+      "main_camera_features": "LED flash, HDR, panorama",
+      "main_camera_video": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps",
+      "selfie_camera": "10 MP, f/2.4, 25mm (wide), 1/3.0\", 1.22µm",
+      "selfie_camera_mp": 10.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30/60fps; gyro-EIS",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, compass",
+      "battery_type": "Li-Ion 4500 mAh",
+      "battery_capacity_mah": 4500,
+      "charging": "25W wired, PD3.0, 50% in 30 min 15W wireless Reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Mint, Cream, Graphite, Purple, Indigo, Tangerine",
+      "models": "SM-S711B, SM-S711B/DS, SM-S711U1, SM-S711U, SM-S711W, SM-S7110, SM-S711N",
+      "price_text": "$ 218.99 / € 276.00 / £ 219.99 / ₹ 59,999",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / HSPA / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 20, 26, 28, 38, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 20, 28, 38, 40, 41, 66, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE, 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2023, October 04"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2023, October 05"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "158 x 76.5 x 8.2 mm (6.22 x 3.01 x 0.32 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "209 g (7.37 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM · Nano-SIM + Nano-SIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1450 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.4 inches, 100.5 cm 2 (~83.2% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1080 x 2340 pixels, 19.5:9 ratio (~403 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass 5"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 13, up to 4 major OS updates, One UI 8"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Exynos 2200 (4 nm) - International Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm) - USA"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x2.8 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510) - International Octa-core (1x3.00 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510) - USA"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Xclipse 920 - International Adreno 730 - USA"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 8GB RAM, 256GB 8GB RAM"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "50 MP, f/1.8, 23mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF, OIS 8 MP, f/2.4, 76mm (telephoto), 1/4.5\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 123˚ (ultrawide), 1/3.0\", 1.12µm"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "10 MP, f/2.4, 25mm (wide), 1/3.0\", 1.22µm"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30/60fps; gyro-EIS"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, GALILEO, BDS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "Unspecified"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, optical), accelerometer, gyro, compass"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Virtual proximity sensing Samsung DeX (desktop experience support)"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 4500 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, PD3.0, 50% in 30 min 15W wireless Reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Mint, Cream, Graphite, Purple, Indigo, Tangerine"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S711B, SM-S711B/DS, SM-S711U1, SM-S711U, SM-S711W, SM-S7110, SM-S711N"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "0.80 W/kg (head) 0.72 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "0.76 W/kg (head) 1.04 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 218.99 / € 276.00 / £ 219.99 / ₹ 59,999"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 940921 (v9) | 1129280 (v10) GeekBench: 3550 (v5.1) | 3946 (v6) GFXBench: 79fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "985 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "23.7 LUFS (Very good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 8:28h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 218.99,
+          "raw_text": "$ 218.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 276.0,
+          "raw_text": "€ 276.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 219.99,
+          "raw_text": "£ 219.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "INR",
+          "amount": 59999.0,
+          "raw_text": "₹ 59,999",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy Z Fold5",
+      "slug": "samsung_galaxy_z_fold5-12418",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_fold5-12418.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold5-5g.jpg",
+      "announced": "2023, July 26",
+      "status": "Available. Released 2023, August 11",
+      "release_year": 2023,
+      "dimensions": "Unfolded: 154.9 x 129.9 x 6.1 mm Folded: 154.9 x 67.1 x 13.4 mm",
+      "weight": "253 g (8.92 oz)",
+      "weight_g": 253.0,
+      "build": "Glass front (Gorilla Glass Victus 2) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "sim": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)",
+      "display_type": "Foldable Dynamic AMOLED 2X, 120Hz, HDR10+",
+      "display_size": "7.6 inches, 183.2 cm 2 (~91.1% screen-to-body ratio)",
+      "display_size_inches": 7.6,
+      "display_resolution": "1812 x 2176 pixels (~373 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": null,
+      "os": "Android 13, up to 4 major OS updates, One UI 8.5",
+      "chipset": "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740",
+      "card_slot": "No",
+      "internal_memory": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM",
+      "max_ram_gb": 12,
+      "max_storage_gb": 1024,
+      "main_camera_setup": "Triple",
+      "main_camera": "50 MP, f/1.8, 23mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 66mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 12mm, 123˚ (ultrawide), 1/3.06\", 1.12µm",
+      "main_camera_mp": 50.0,
+      "main_camera_features": "LED flash, HDR, panorama",
+      "main_camera_video": "8K@30fps, 4K@60fps, 1080p@60/240fps (gyro-EIS), HDR10+",
+      "selfie_camera": "4 MP, f/1.8, 26mm (wide), 1/3.0\", 2.0µm, under display Cover camera: 10 MP, f/2.2, 24mm (wide), 1/3.0\", 1.22µm",
+      "selfie_camera_mp": 4.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30/60fps, gyro-EIS",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE, aptX HD",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Po 4400 mAh",
+      "battery_capacity_mah": 4400,
+      "charging": "25W wired, 50% in 30 min 15W wireless 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Icy Blue, Phantom Black, Cream, Gray, Blue",
+      "models": "SM-F946B, SM-F946B/DS, SM-F946U, SM-F946U1, SM-F946N, SM-F946W, SM-F9460",
+      "price_text": "$ 974.44 / € 599.08 / £ 449.00",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 18, 19, 20, 26, 28, 38, 39, 40, 41, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 18, 19, 20, 25, 29, 30, 38, 39, 40, 41, 46, 66, 71 - Canada"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 28, 38, 40, 41, 66, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 5",
+          "value": "2, 5, 48, 66, 77, 78, 257, 260, 261 SA/NSA/Sub6/mmWave - USA (Verizon)"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 6",
+          "value": "2, 5, 38, 41, 66, 71, 78 SA/NSA/Sub6 - Canada"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE, 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2023, July 26"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2023, August 11"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "Unfolded: 154.9 x 129.9 x 6.1 mm Folded: 154.9 x 67.1 x 13.4 mm"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "253 g (8.92 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus 2) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IPX8 water resistant (up to 1.5m for 30 min) Armor Aluminum Stylus support"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Foldable Dynamic AMOLED 2X, 120Hz, HDR10+"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "7.6 inches, 183.2 cm 2 (~91.1% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1812 x 2176 pixels (~373 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Additional 1",
+          "value": "Cover display: Dynamic AMOLED 2X, 120Hz, Corning Gorilla Glass Victus 2 6.2 inches, 904 x 2316 pixels, 23.1:9 ratio"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 13, up to 4 major OS updates, One UI 8.5"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 740"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "50 MP, f/1.8, 23mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 66mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 12mm, 123˚ (ultrawide), 1/3.06\", 1.12µm"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@30fps, 4K@60fps, 1080p@60/240fps (gyro-EIS), HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "4 MP, f/1.8, 26mm (wide), 1/3.0\", 2.0µm, under display Cover camera: 10 MP, f/2.2, 24mm (wide), 1/3.0\", 1.22µm"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE, aptX HD"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, GALILEO, BDS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX (desktop experience support) Ultra Wideband (UWB) support"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Po 4400 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, 50% in 30 min 15W wireless 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Icy Blue, Phantom Black, Cream, Gray, Blue"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-F946B, SM-F946B/DS, SM-F946U, SM-F946U1, SM-F946N, SM-F946W, SM-F9460"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.16 W/kg (head)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "1.24 W/kg (head) 1.19 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 974.44 / € 599.08 / £ 449.00"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 1250358 (v9), 1519358 (v10) GeekBench: 4824 (v5.5), 5396 (v6.0) GFXBench: 65fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1257 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "25.9 LUFS (Very good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 12:01h"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 95h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 974.44,
+          "raw_text": "$ 974.44",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 599.08,
+          "raw_text": "€ 599.08",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 449.0,
+          "raw_text": "£ 449.00",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy Z Flip5",
+      "slug": "samsung_galaxy_z_flip5-12252",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_flip5-12252.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-flip5-5g.jpg",
+      "announced": "2023, July 26",
+      "status": "Available. Released 2023, August 11",
+      "release_year": 2023,
+      "dimensions": "Unfolded: 165.1 x 71.9 x 6.9 mm Folded: 85.1 x 71.9 x 15.1 mm",
+      "weight": "187 g (6.60 oz)",
+      "weight_g": 187.0,
+      "build": "Plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "sim": "Nano-SIM + eSIM",
+      "display_type": "Foldable Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits (peak)",
+      "display_size": "6.7 inches, 102.0 cm 2 (~85.9% screen-to-body ratio)",
+      "display_size_inches": 6.7,
+      "display_resolution": "1080 x 2640 pixels (~425 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": null,
+      "os": "Android 13, upgradable to Android 16, One UI 8.5",
+      "chipset": "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740",
+      "card_slot": "No",
+      "internal_memory": "256GB 8GB RAM, 512GB 8GB RAM",
+      "max_ram_gb": 8,
+      "max_storage_gb": 512,
+      "main_camera_setup": "Dual",
+      "main_camera": "12 MP, f/1.8, 24mm (wide), 1/1.76\", 1.8µm, dual pixel PDAF, OIS 12 MP, f/2.2, 13mm, 123˚ (ultrawide), 1/3.06\", 1.12µm",
+      "main_camera_mp": 12.0,
+      "main_camera_features": "LED flash, HDR, panorama",
+      "main_camera_video": "4K@30/60fps, 1080p@60/240fps, HDR10+",
+      "selfie_camera": "10 MP, f/2.2, 23mm (wide), 1/3.0\", 1.22µm",
+      "selfie_camera_mp": 10.0,
+      "selfie_camera_video": "4K@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Po 3700 mAh",
+      "battery_capacity_mah": 3700,
+      "charging": "25W wired, 50% in 30 min 15W wireless 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Mint, Graphite, Cream, Lavender, Gray, Blue, Green, Yellow",
+      "models": "SM-F731B, SM-F731B/DS, SM-F731U, SM-F731U1, SM-F731W, SM-F731N",
+      "price_text": "$ 309.99 / € 339.50 / £ 269.99 / ₹ 63,980",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "HSDPA 850 / 900 / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 18, 19, 20, 26, 28, 38, 39, 40, 41, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 5",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 18, 19, 20, 25, 29, 30, 38, 39, 40, 41, 46, 66, 71 - Canada"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 28, 38, 40, 41, 66, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 6",
+          "value": "2, 5, 48, 66, 77, 78, 257, 260, 261 SA/NSA/Sub6/mmWave - USA (Verizon)"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 7",
+          "value": "2, 5, 38, 41, 66, 71, 78 SA/NSA/Sub6 - Canada"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE, 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2023, July 26"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2023, August 11"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "Unfolded: 165.1 x 71.9 x 6.9 mm Folded: 85.1 x 71.9 x 15.1 mm"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "187 g (6.60 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IPX8 water resistant (up to 1.5m for 30 min) Armor Aluminum"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Foldable Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.7 inches, 102.0 cm 2 (~85.9% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1080 x 2640 pixels (~425 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Additional 1",
+          "value": "Cover display: Super AMOLED, 60Hz, 3.4 inches, 720 x 748 pixels (Gorilla Glass Victus 2), 306 ppi"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 13, upgradable to Android 16, One UI 8.5"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 740"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "256GB 8GB RAM, 512GB 8GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Dual",
+          "value": "12 MP, f/1.8, 24mm (wide), 1/1.76\", 1.8µm, dual pixel PDAF, OIS 12 MP, f/2.2, 13mm, 123˚ (ultrawide), 1/3.06\", 1.12µm"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@60/240fps, HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "10 MP, f/2.2, 23mm (wide), 1/3.0\", 1.22µm"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "32-bit/384kHz audio"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, GALILEO, BDS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Po 3700 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, 50% in 30 min 15W wireless 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Mint, Graphite, Cream, Lavender, Gray, Blue, Green, Yellow"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-F731B, SM-F731B/DS, SM-F731U, SM-F731U1, SM-F731W, SM-F731N"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.17 W/kg (head)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "0.60 W/kg (head) 1.45 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 309.99 / € 339.50 / £ 269.99 / ₹ 63,980"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 1200783 (v9), 1507319 (v10) GeekBench: 5478 (v5.5), 4984 (v6.0) GFXBench: 91fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1101 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "27.1 LUFS (Good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 9:29h"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 87h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 309.99,
+          "raw_text": "$ 309.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 339.5,
+          "raw_text": "€ 339.50",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 269.99,
+          "raw_text": "£ 269.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "INR",
+          "amount": 63980.0,
+          "raw_text": "₹ 63,980",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy A54",
+      "slug": "samsung_galaxy_a54-12070",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_a54-12070.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a54.jpg",
+      "announced": "2023, March 15",
+      "status": "Available. Released 2023, March 24",
+      "release_year": 2023,
+      "dimensions": "158.2 x 76.7 x 8.2 mm (6.23 x 3.02 x 0.32 in)",
+      "weight": "202 g (7.13 oz)",
+      "weight_g": 202.0,
+      "build": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), plastic frame",
+      "sim": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM",
+      "display_type": "Super AMOLED, 120Hz, HDR10+, 1000 nits (HBM)",
+      "display_size": "6.4 inches, 100.5 cm 2 (~82.9% screen-to-body ratio)",
+      "display_size_inches": 6.4,
+      "display_resolution": "1080 x 2340 pixels, 19.5:9 ratio (~403 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass 5",
+      "os": "Android 13, up to 4 major OS updates, One UI 8.5",
+      "chipset": "Exynos 1380 (5 nm)",
+      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G68 MP5",
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal_memory": "128GB 4GB RAM, 128GB 6GB RAM, 128GB 8GB RAM, 256GB 6GB RAM, 256GB 8GB RAM",
+      "max_ram_gb": 8,
+      "max_storage_gb": 256,
+      "main_camera_setup": "Triple",
+      "main_camera": "50 MP, f/1.8, 23mm (wide), 1/1.56\", 1.0µm, PDAF, OIS 12 MP, f/2.2, 13mm, 123˚ (ultrawide), 1/3.X\", 1.12µm 5 MP (macro)",
+      "main_camera_mp": 50.0,
+      "main_camera_features": "LED flash, panorama, HDR",
+      "main_camera_video": "4K@30fps, 1080p@30/60fps, 720p@480fps, gyro-EIS",
+      "selfie_camera": "32 MP, f/2.2, 26mm (wide), 1/2.8\", 0.8µm",
+      "selfie_camera_mp": 32.0,
+      "selfie_camera_video": "4K@30fps, 1080p@30/60fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "nfc": "Yes (market/region dependent)",
+      "usb": "USB Type-C 2.0, OTG",
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, compass, barometer (USA only)",
+      "battery_type": "5000 mAh",
+      "battery_capacity_mah": 5000,
+      "charging": "25W wired",
+      "charging_watts": 25.0,
+      "colors": "Lime, Graphite, Violet, White",
+      "models": "SM-A546V, SM-A546U, SM-A546U1, SM-A546B, SM-A546B/DS, SM-A546E, SM-A546E/DS, SM-A5460, SM-A546M, SM-A546M/DS, SM-A546W",
+      "price_text": "$ 154.11 / € 225.07 / £ 179.00",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / HSPA / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 32, 38, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "1, 2, 3, 4, 5, 7, 12, 13, 14, 20, 25, 26, 29, 30, 38, 39, 40, 41, 46, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 3, 7, 8, 20, 28, 38, 40, 41, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "25, 41, 66, 71 SA/NSA/Sub6/mmWave - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE, 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2023, March 15"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2023, March 24"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "158.2 x 76.7 x 8.2 mm (6.23 x 3.02 x 0.32 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "202 g (7.13 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), plastic frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP67 dust/water resistant (up to 1m for 30 min)"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Super AMOLED, 120Hz, HDR10+, 1000 nits (HBM)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.4 inches, 100.5 cm 2 (~82.9% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1080 x 2340 pixels, 19.5:9 ratio (~403 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass 5"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 13, up to 4 major OS updates, One UI 8.5"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Exynos 1380 (5 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (4x2.4 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Mali-G68 MP5"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "microSDXC (uses shared SIM slot)"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 4GB RAM, 128GB 6GB RAM, 128GB 8GB RAM, 256GB 6GB RAM, 256GB 8GB RAM"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "50 MP, f/1.8, 23mm (wide), 1/1.56\", 1.0µm, PDAF, OIS 12 MP, f/2.2, 13mm, 123˚ (ultrawide), 1/3.X\", 1.12µm 5 MP (macro)"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, panorama, HDR"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "4K@30fps, 1080p@30/60fps, 720p@480fps, gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "32 MP, f/2.2, 26mm (wide), 1/2.8\", 0.8µm"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30fps, 1080p@30/60fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, GALILEO, BDS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes (market/region dependent)"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 2.0, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, optical), accelerometer, gyro, compass, barometer (USA only)"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Virtual proximity sensing"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "5000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Lime, Graphite, Violet, White"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-A546V, SM-A546U, SM-A546U1, SM-A546B, SM-A546B/DS, SM-A546E, SM-A546E/DS, SM-A5460, SM-A546M, SM-A546M/DS, SM-A546W"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "0.81 W/kg (head) 0.67 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "0.69 W/kg (head) 1.34 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 154.11 / € 225.07 / £ 179.00"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 506678 (v9) GeekBench: 2703 (v5.1), 2797 (v6) GFXBench: 25fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "980 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "26.6 LUFS (Good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 11:15h"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 119h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 154.11,
+          "raw_text": "$ 154.11",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 225.07,
+          "raw_text": "€ 225.07",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 179.0,
+          "raw_text": "£ 179.00",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S23 Ultra",
+      "slug": "samsung_galaxy_s23_ultra-12024",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s23_ultra-12024.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg",
+      "announced": "2023, February 01",
+      "status": "Available. Released 2023, February 17",
+      "release_year": 2023,
+      "dimensions": "163.4 x 78.1 x 8.9 mm (6.43 x 3.07 x 0.35 in)",
+      "weight": "234 g (8.25 oz)",
+      "weight_g": 234.0,
+      "build": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "sim": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)",
+      "display_type": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak)",
+      "display_size": "6.8 inches, 114.7 cm 2 (~89.9% screen-to-body ratio)",
+      "display_size_inches": 6.8,
+      "display_resolution": "1440 x 3088 pixels, 19.3:9 ratio (~500 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass Victus 2",
+      "os": "Android 13, up to 4 major OS updates, One UI 8.5",
+      "chipset": "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740",
+      "card_slot": "No",
+      "internal_memory": "256GB 8GB RAM, 256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM",
+      "max_ram_gb": 12,
+      "max_storage_gb": 1024,
+      "main_camera_setup": "Quad",
+      "main_camera": "200 MP, f/1.7, 24mm (wide), 1/1.3\", 0.6µm, multi-directional PDAF, OIS 10 MP, f/2.4, 70mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom 10 MP, f/4.9, 230mm (periscope telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 10x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF, Super Steady video",
+      "main_camera_mp": 200.0,
+      "main_camera_features": "Laser AF, LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF",
+      "selfie_camera_mp": 12.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 5000 mAh",
+      "battery_capacity_mah": 5000,
+      "charging": "45W wired, PD3.0, 65% in 30 min 15W wireless (Qi) 4.5W reverse wireless",
+      "charging_watts": 45.0,
+      "colors": "Phantom Black, Green, Cream, Lavender, Graphite, Sky Blue, Lime, Red, BMW M Edition",
+      "models": "SM-S918B, SM-S918B/DS, SM-S918U, SM-S918U1, SM-S918W, SM-S918N, SM-S9180, SM-S918E, SM-S918E/DS",
+      "price_text": "$ 434.99 / € 441.44 / £ 424.99 / ₹ 89,999",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 46, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 7, 28, 41, 66, 71, 78, 258, 260, 261 SA/NSA/Sub6/mmWave - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE (CA), 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2023, February 01"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2023, February 17"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "163.4 x 78.1 x 8.9 mm (6.43 x 3.07 x 0.35 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "234 g (8.25 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Armor Aluminum Stylus (Bluetooth integration, accelerometer, gyro)"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.8 inches, 114.7 cm 2 (~89.9% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1440 x 3088 pixels, 19.3:9 ratio (~500 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass Victus 2"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 13, up to 4 major OS updates, One UI 8.5"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 740"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "256GB 8GB RAM, 256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Quad",
+          "value": "200 MP, f/1.7, 24mm (wide), 1/1.3\", 0.6µm, multi-directional PDAF, OIS 10 MP, f/2.4, 70mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom 10 MP, f/4.9, 230mm (periscope telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 10x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "Laser AF, LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR, HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GALILEO, GLONASS, BDS, QZSS"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support) Ultra Wideband (UWB) support"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 5000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "45W wired, PD3.0, 65% in 30 min 15W wireless (Qi) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Phantom Black, Green, Cream, Lavender, Graphite, Sky Blue, Lime, Red, BMW M Edition"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S918B, SM-S918B/DS, SM-S918U, SM-S918U1, SM-S918W, SM-S918N, SM-S9180, SM-S918E, SM-S918E/DS"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.12 W/kg (head) 0.92 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "0.96 W/kg (head) 1.40 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 434.99 / € 441.44 / £ 424.99 / ₹ 89,999"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 1241531 (v9) GeekBench: 4927 (v5.1) 3DMark: 3790 (Wild Life Extreme)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1274 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "25.6 LUFS (Very good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 13:24h"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 126h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 434.99,
+          "raw_text": "$ 434.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 441.44,
+          "raw_text": "€ 441.44",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 424.99,
+          "raw_text": "£ 424.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "INR",
+          "amount": 89999.0,
+          "raw_text": "₹ 89,999",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S23",
+      "slug": "samsung_galaxy_s23-12082",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s23-12082.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-5g.jpg",
+      "announced": "2023, February 01",
+      "status": "Available. Released 2023, February 17",
+      "release_year": 2023,
+      "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+      "weight": "168 g (5.93 oz)",
+      "weight_g": 168.0,
+      "build": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame",
+      "sim": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)",
+      "display_type": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak)",
+      "display_size": "6.1 inches, 90.1 cm 2 (~86.8% screen-to-body ratio)",
+      "display_size_inches": 6.1,
+      "display_resolution": "1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass Victus 2",
+      "os": "Android 13, up to 4 major OS updates, One UI 8.5",
+      "chipset": "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740",
+      "card_slot": "No",
+      "internal_memory": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+      "max_ram_gb": 8,
+      "max_storage_gb": 512,
+      "main_camera_setup": "Triple",
+      "main_camera": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 70mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video",
+      "main_camera_mp": 50.0,
+      "main_camera_features": "LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF",
+      "selfie_camera_mp": 12.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 3900 mAh",
+      "battery_capacity_mah": 3900,
+      "charging": "25W wired, PD3.0, 50% in 30 min 15W wireless (Qi) 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Phantom Black, Cream, Green, Lavender, Graphite, Lime",
+      "models": "SM-S911B, SM-S911B/DS, SM-S911U, SM-S911U1, SM-S911W, SM-S911N, SM-S9110, SM-S911E, SM-S911E/DS",
+      "price_text": "$ 261.99 / € 299.00 / £ 239.99 / ₹ 54,999",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 20, 25, 26, 28, 38, 39, 40, 41, 46, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 7, 25, 28, 41, 66, 71, 78, 258, 260, 261 SA/NSA/Sub6/mmWave - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA, LTE (CA), 5G"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2023, February 01"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2023, February 17"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "168 g (5.93 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Armor Aluminum"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1200 nits (HBM), 1750 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.1 inches, 90.1 cm 2 (~86.8% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass Victus 2"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 13, up to 4 major OS updates, One UI 8.5"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm)"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Adreno 740"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 3.1 - 128GB only UFS 4.0"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 70mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR, HDR10+"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.3, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support)"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 3900 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, PD3.0, 50% in 30 min 15W wireless (Qi) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Phantom Black, Cream, Green, Lavender, Graphite, Lime"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S911B, SM-S911B/DS, SM-S911U, SM-S911U1, SM-S911W, SM-S911N, SM-S9110, SM-S911E, SM-S911E/DS"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "0.95 W/kg (head) 0.88 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "0.96 W/kg (head) 1.30 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 261.99 / € 299.00 / £ 239.99 / ₹ 54,999"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 1231075 (v9) GeekBench: 4950 (v5.1) GFXBench: 110fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1198 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "27.0 LUFS (Good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery",
+          "value": "Active use score 11:27h"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 101h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 261.99,
+          "raw_text": "$ 261.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 299.0,
+          "raw_text": "€ 299.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 239.99,
+          "raw_text": "£ 239.99",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "INR",
+          "amount": 54999.0,
+          "raw_text": "₹ 54,999",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S22 Ultra 5G",
+      "slug": "samsung_galaxy_s22_ultra_5g-11251",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s22_ultra_5g-11251.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+      "announced": "2022, February 09",
+      "status": "Available. Released 2022, February 25",
+      "release_year": 2022,
+      "dimensions": "163.3 x 77.9 x 8.9 mm (6.43 x 3.07 x 0.35 in)",
+      "weight": "228 g / 229 g (mmWave) (8.04 oz)",
+      "weight_g": 228.0,
+      "build": "Glass front (Gorilla Glass Victus+), glass back (Gorilla Glass Victus+), aluminum frame",
+      "sim": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)",
+      "display_type": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits (peak)",
+      "display_size": "6.8 inches, 114.7 cm 2 (~90.2% screen-to-body ratio)",
+      "display_size_inches": 6.8,
+      "display_resolution": "1440 x 3088 pixels, 19.3:9 ratio (~500 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass Victus+",
+      "os": "Android 12, up to 4 major OS updates, One UI 8",
+      "chipset": "Exynos 2200 (4 nm) - Europe Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm) - ROW",
+      "cpu": "Octa-core (1x2.8 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510) - Europe Octa-core (1x3.00 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510) - ROW",
+      "gpu": "Xclipse 920 - Europe Adreno 730 - ROW",
+      "card_slot": "No",
+      "internal_memory": "128GB 8GB RAM, 256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM",
+      "max_ram_gb": 12,
+      "max_storage_gb": 1024,
+      "main_camera_setup": "Quad",
+      "main_camera": "108 MP, f/1.8, 23mm (wide), 1/1.33\", 0.8µm, PDAF, OIS 10 MP, f/2.4, 70mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom 10 MP, f/4.9, 230mm (periscope telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 10x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF, Super Steady video",
+      "main_camera_mp": 108.0,
+      "main_camera_features": "Laser AF, LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "40 MP, f/2.2, 26mm (wide), 1/2.82\", 0.7µm, PDAF",
+      "selfie_camera_mp": 40.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.2, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 5000 mAh",
+      "battery_capacity_mah": 5000,
+      "charging": "45W wired, PD3.0 15W wireless (Qi) 4.5W reverse wireless",
+      "charging_watts": 45.0,
+      "colors": "Phantom Black, White, Burgundy, Green, Graphite, Red, Sky Blue",
+      "models": "SM-S908B, SM-S908B/DS, SM-S908U, SM-S908U1, SM-S908W, SM-S908N, SM-S9080, SM-S908E, SM-S908E/DS",
+      "price_text": "$ 325.50 / € 370.00 / £ 284.99",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 46, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 3, 5, 7, 8, 20, 28, 38, 41, 66, 71, 260, 261 SA/NSA/Sub6/mmWave - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA 42.2/5.76 Mbps, LTE (7CA) Cat20 2000/200 Mbps, 5G (5+ Gbps DL)"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2022, February 09"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2022, February 25"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "163.3 x 77.9 x 8.9 mm (6.43 x 3.07 x 0.35 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "228 g / 229 g (mmWave) (8.04 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus+), glass back (Gorilla Glass Victus+), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Armor Aluminum Stylus, 2.8ms latency (Bluetooth integration, accelerometer, gyro)"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.8 inches, 114.7 cm 2 (~90.2% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1440 x 3088 pixels, 19.3:9 ratio (~500 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass Victus+"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 12, up to 4 major OS updates, One UI 8"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Exynos 2200 (4 nm) - Europe Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm) - ROW"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x2.8 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510) - Europe Octa-core (1x3.00 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510) - ROW"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Xclipse 920 - Europe Adreno 730 - ROW"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 8GB RAM, 256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 3.1"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Quad",
+          "value": "108 MP, f/1.8, 23mm (wide), 1/1.33\", 0.8µm, PDAF, OIS 10 MP, f/2.4, 70mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom 10 MP, f/4.9, 230mm (periscope telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 10x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "Laser AF, LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "40 MP, f/2.2, 26mm (wide), 1/2.82\", 0.7µm, PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, dual-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.2, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support) Ultra Wideband (UWB) support"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 5000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "45W wired, PD3.0 15W wireless (Qi) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Phantom Black, White, Burgundy, Green, Graphite, Red, Sky Blue"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S908B, SM-S908B/DS, SM-S908U, SM-S908U1, SM-S908W, SM-S908N, SM-S9080, SM-S908E, SM-S908E/DS"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.18 W/kg (head) 0.98 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "1.05 W/kg (head) 1.58 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 325.50 / € 370.00 / £ 284.99"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 968359 (v9) GeekBench: 3657 (v5.1) GFXBench: 37fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1266 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "27.3 LUFS (Good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 108h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 325.5,
+          "raw_text": "$ 325.50",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 370.0,
+          "raw_text": "€ 370.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 284.99,
+          "raw_text": "£ 284.99",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S22 5G",
+      "slug": "samsung_galaxy_s22_5g-11253",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s22_5g-11253.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg",
+      "announced": "2022, February 09",
+      "status": "Available. Released 2022, February 25",
+      "release_year": 2022,
+      "dimensions": "146 x 70.6 x 7.6 mm (5.75 x 2.78 x 0.30 in)",
+      "weight": "167 g / 168 g (mmWave) (5.89 oz)",
+      "weight_g": 167.0,
+      "build": "Glass front (Gorilla Glass Victus+), glass back (Gorilla Glass Victus+), aluminum frame",
+      "sim": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)",
+      "display_type": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1300 nits (peak)",
+      "display_size": "6.1 inches, 90.1 cm 2 (~87.4% screen-to-body ratio)",
+      "display_size_inches": 6.1,
+      "display_resolution": "1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass Victus+",
+      "os": "Android 12, up to 4 major OS updates, One UI 8",
+      "chipset": "Exynos 2200 (4 nm) - Europe Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm) - ROW",
+      "cpu": "Octa-core (1x2.8 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510) - Europe Octa-core (1x3.00 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510) - ROW",
+      "gpu": "Xclipse 920 - Europe Adreno 730 - ROW",
+      "card_slot": "No",
+      "internal_memory": "128GB 8GB RAM, 256GB 8GB RAM",
+      "max_ram_gb": 8,
+      "max_storage_gb": 256,
+      "main_camera_setup": "Triple",
+      "main_camera": "50 MP, f/1.8, 23mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 70mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video",
+      "main_camera_mp": 50.0,
+      "main_camera_features": "LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "10 MP, f/2.2, 26mm (wide), 1/3.24\", 1.22µm, dual pixel PDAF",
+      "selfie_camera_mp": 10.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.2, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 3700 mAh",
+      "battery_capacity_mah": 3700,
+      "charging": "25W wired, PD3.0 15W wireless (Qi) 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Phantom Black, White, Pink Gold, Green, Graphite, Sky Blue, Violet, Cream, Bora Purple",
+      "models": "SM-S901B, SM-S901B/DS, SM-S901U, SM-S901U1, SM-S901W, SM-S901N, SM-S9010, SM-S901E, SM-S901E/DS",
+      "price_text": "$ 195.00 / € 239.00 / £ 193.93",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 46, 48, 66, 71 - USA"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "1, 2, 3, 5, 7, 8, 12, 20, 25, 28, 38, 40, 41, 66, 75, 77, 78 SA/NSA/Sub6 - International"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 3, 5, 7, 8, 20, 28, 38, 41, 66, 71, 260, 261 SA/NSA/Sub6/mmWave - USA"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA 42.2/5.76 Mbps, LTE (7CA) Cat20 2000/200 Mbps, 5G (5+ Gbps DL)"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2022, February 09"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2022, February 25"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "146 x 70.6 x 7.6 mm (5.75 x 2.78 x 0.30 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "167 g / 168 g (mmWave) (5.89 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus+), glass back (Gorilla Glass Victus+), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Armor Aluminum"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1300 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.1 inches, 90.1 cm 2 (~87.4% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1080 x 2340 pixels, 19.5:9 ratio (~425 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass Victus+"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 12, up to 4 major OS updates, One UI 8"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Exynos 2200 (4 nm) - Europe Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm) - ROW"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x2.8 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510) - Europe Octa-core (1x3.00 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510) - ROW"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Xclipse 920 - Europe Adreno 730 - ROW"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 8GB RAM, 256GB 8GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 3.1"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "50 MP, f/1.8, 23mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS 10 MP, f/2.4, 70mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "10 MP, f/2.2, 26mm (wide), 1/3.24\", 1.22µm, dual pixel PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.2, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "No"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support)"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 3700 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, PD3.0 15W wireless (Qi) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Phantom Black, White, Pink Gold, Green, Graphite, Sky Blue, Violet, Cream, Bora Purple"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-S901B, SM-S901B/DS, SM-S901U, SM-S901U1, SM-S901W, SM-S901N, SM-S9010, SM-S901E, SM-S901E/DS"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "1.03 W/kg (head) 1.15 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "1.21 W/kg (head) 1.59 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 195.00 / € 239.00 / £ 193.93"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 745496 (v8), 881428 (v9) GeekBench: 3682 (v5.1) GFXBench: 69fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "982 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "26.4 LUFS (Good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 85h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 195.0,
+          "raw_text": "$ 195.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 239.0,
+          "raw_text": "€ 239.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 193.93,
+          "raw_text": "£ 193.93",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S21 Ultra 5G",
+      "slug": "samsung_galaxy_s21_ultra_5g-10596",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s21_ultra_5g-10596.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-ultra-5g-.jpg",
+      "announced": "2021, January 14",
+      "status": "Available. Released 2021, January 29",
+      "release_year": 2021,
+      "dimensions": "165.1 x 75.6 x 8.9 mm (6.5 x 2.98 x 0.35 in)",
+      "weight": "227 g (Sub6), 229 g (mmWave) (8.01 oz)",
+      "weight_g": 227.0,
+      "build": "Glass front (Gorilla Glass Victus), glass back (Gorilla Glass Victus), aluminum frame",
+      "sim": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)",
+      "display_type": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1500 nits (peak)",
+      "display_size": "6.8 inches, 112.1 cm 2 (~89.8% screen-to-body ratio)",
+      "display_size_inches": 6.8,
+      "display_resolution": "1440 x 3200 pixels, 20:9 ratio (~515 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass Victus",
+      "os": "Android 11, up to 4 major OS updates, One UI 7",
+      "chipset": "Exynos 2100 (5 nm) - International Qualcomm SM8350 Snapdragon 888 5G (5 nm) - USA/China",
+      "cpu": "Octa-core (1x2.9 GHz Cortex-X1 & 3x2.80 GHz Cortex-A78 & 4x2.2 GHz Cortex-A55) - International Octa-core (1x2.84 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55) - USA/China",
+      "gpu": "Mali-G78 MP14 - International Adreno 660 - USA/China",
+      "card_slot": "No",
+      "internal_memory": "128GB 8GB RAM, 128GB 12GB RAM, 256GB 12GB RAM, 256GB 16GB RAM, 512GB 12GB RAM, 512GB 16GB RAM",
+      "max_ram_gb": 16,
+      "max_storage_gb": 512,
+      "main_camera_setup": "Quad",
+      "main_camera": "108 MP, f/1.8, 24mm (wide), 1/1.33\", 0.8µm, PDAF, OIS 10 MP, f/2.4, 72mm (telephoto), 1/3.24\", 1.22µm, dual pixel PDAF, OIS, 3x optical zoom 10 MP, f/4.9, 240mm (periscope telephoto), 1/3.24\", 1.22µm, dual pixel PDAF, OIS, 10x optical zoom 12 MP, f/2.2, 13mm (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF, Super Steady video",
+      "main_camera_mp": 108.0,
+      "main_camera_features": "Laser AF, LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "40 MP, f/2.2, 26mm (wide), 1/2.8\", 0.7µm, PDAF",
+      "selfie_camera_mp": 40.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.2, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 5000 mAh",
+      "battery_capacity_mah": 5000,
+      "charging": "25W wired, PD3.0 15W wireless (Qi) 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Phantom Black, Phantom Silver, Phantom Titanium, Phantom Navy, Phantom Brown, Navy",
+      "models": "SM-G998B, SM-G998B/DS, SM-G998U, SM-G998U1, SM-G998W, SM-G998N, SM-G9980",
+      "price_text": "$ 255.00 / € 209.00 / £ 214.99",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 30, 38, 39, 40, 41, 46, 48, 66, 71 - SM-G998U1"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - SM-G998B"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "2, 5, 25, 41, 66, 71, 260, 261 SA/NSA/Sub6/mmWave - SM-G998U1"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 66, 77, 78 SA/NSA/Sub6 - SM-G998B"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA 42.2/5.76 Mbps, LTE (7CA) Cat20 2000/200 Mbps, 5G (5+ Gbps DL)"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2021, January 14"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2021, January 29"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "165.1 x 75.6 x 8.9 mm (6.5 x 2.98 x 0.35 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "227 g (Sub6), 229 g (mmWave) (8.01 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus), glass back (Gorilla Glass Victus), aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min) Stylus support"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1500 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.8 inches, 112.1 cm 2 (~89.8% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1440 x 3200 pixels, 20:9 ratio (~515 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass Victus"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 11, up to 4 major OS updates, One UI 7"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Exynos 2100 (5 nm) - International Qualcomm SM8350 Snapdragon 888 5G (5 nm) - USA/China"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x2.9 GHz Cortex-X1 & 3x2.80 GHz Cortex-A78 & 4x2.2 GHz Cortex-A55) - International Octa-core (1x2.84 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55) - USA/China"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Mali-G78 MP14 - International Adreno 660 - USA/China"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 8GB RAM, 128GB 12GB RAM, 256GB 12GB RAM, 256GB 16GB RAM, 512GB 12GB RAM, 512GB 16GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 3.1"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Quad",
+          "value": "108 MP, f/1.8, 24mm (wide), 1/1.33\", 0.8µm, PDAF, OIS 10 MP, f/2.4, 72mm (telephoto), 1/3.24\", 1.22µm, dual pixel PDAF, OIS, 3x optical zoom 10 MP, f/4.9, 240mm (periscope telephoto), 1/3.24\", 1.22µm, dual pixel PDAF, OIS, 10x optical zoom 12 MP, f/2.2, 13mm (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "Laser AF, LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "40 MP, f/2.2, 26mm (wide), 1/2.8\", 0.7µm, PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6e, dual-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.2, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "FM radio (Snapdragon model only; market/operator dependent)"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support) Ultra Wideband (UWB) support"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 5000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, PD3.0 15W wireless (Qi) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Phantom Black, Phantom Silver, Phantom Titanium, Phantom Navy, Phantom Brown, Navy"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-G998B, SM-G998B/DS, SM-G998U, SM-G998U1, SM-G998W, SM-G998N, SM-G9980"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "0.77 W/kg (head) 1.02 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "0.71 W/kg (head) 1.58 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 255.00 / € 209.00 / £ 214.99"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 657150 (v8) GeekBench: 3518 (v5.1) GFXBench: 33fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "1023 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "25.5 LUFS (Very good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 114h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 255.0,
+          "raw_text": "$ 255.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 209.0,
+          "raw_text": "€ 209.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 214.99,
+          "raw_text": "£ 214.99",
+          "source": "GSMArena"
+        }
+      ]
+    },
+    {
+      "name": "Samsung Galaxy S21 5G",
+      "slug": "samsung_galaxy_s21_5g-10626",
+      "brand": "Samsung",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s21_5g-10626.php",
+      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-5g-r.jpg",
+      "announced": "2021, January 14",
+      "status": "Available. Released 2021, January 29",
+      "release_year": 2021,
+      "dimensions": "151.7 x 71.2 x 7.9 mm (5.97 x 2.80 x 0.31 in)",
+      "weight": "169 g (Sub6), 171 g (mmWave) (5.96 oz)",
+      "weight_g": 169.0,
+      "build": "Glass front (Gorilla Glass Victus), plastic back, aluminum frame",
+      "sim": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)",
+      "display_type": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1300 nits (peak)",
+      "display_size": "6.2 inches, 94.1 cm 2 (~87.2% screen-to-body ratio)",
+      "display_size_inches": 6.2,
+      "display_resolution": "1080 x 2400 pixels, 20:9 ratio (~421 ppi density)",
+      "display_refresh_rate_hz": 120,
+      "display_protection": "Corning Gorilla Glass Victus",
+      "os": "Android 11, up to 4 major OS updates, One UI 7",
+      "chipset": "Exynos 2100 (5 nm) - International Qualcomm SM8350 Snapdragon 888 5G (5 nm) - USA/China",
+      "cpu": "Octa-core (1x2.9 GHz Cortex-X1 & 3x2.80 GHz Cortex-A78 & 4x2.2 GHz Cortex-A55) - International Octa-core (1x2.84 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55) - USA/China",
+      "gpu": "Mali-G78 MP14 - International Adreno 660 - USA/China",
+      "card_slot": "No",
+      "internal_memory": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM",
+      "max_ram_gb": 8,
+      "max_storage_gb": 256,
+      "main_camera_setup": "Triple",
+      "main_camera": "12 MP, f/1.8, 26mm (wide), 1/1.76\", 1.8µm, dual pixel PDAF, OIS 64 MP, f/2.0, 29mm (telephoto), 1/1.72\", 0.8µm, PDAF, OIS, 1.1x optical zoom, 3x hybrid zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video",
+      "main_camera_mp": 12.0,
+      "main_camera_features": "LED flash, auto-HDR, panorama",
+      "main_camera_video": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS",
+      "selfie_camera": "10 MP, f/2.2, 26mm (wide), 1/3.24\", 1.22µm, dual pixel PDAF",
+      "selfie_camera_mp": 10.0,
+      "selfie_camera_video": "4K@30/60fps, 1080p@30fps",
+      "loudspeaker": "Yes, with stereo speakers",
+      "jack_3_5mm": "No",
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "nfc": "Yes",
+      "usb": "USB Type-C 3.2, OTG",
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer",
+      "battery_type": "Li-Ion 4000 mAh",
+      "battery_capacity_mah": 4000,
+      "charging": "25W wired, PD3.0 15W wireless (Qi) 4.5W reverse wireless",
+      "charging_watts": 25.0,
+      "colors": "Phantom Gray, Phantom White, Phantom Violet, Phantom Pink",
+      "models": "SM-G991B, SM-G991B/DS, SM-G991U, SM-G991U1, SM-G991W, SM-G991N, SM-G9910, SM-G991Q, SCG09",
+      "price_text": "$ 174.44 / € 199.00 / £ 161.00",
+      "raw_specifications": [
+        {
+          "category": "Network",
+          "name": "Technology",
+          "value": "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+        },
+        {
+          "category": "Network",
+          "name": "2G bands",
+          "value": "GSM 850 / 900 / 1800 / 1900"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 1",
+          "value": "CDMA 800 / 1900 & TD-SCDMA"
+        },
+        {
+          "category": "Network",
+          "name": "3G bands",
+          "value": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 2",
+          "value": "CDMA2000 1xEV-DO"
+        },
+        {
+          "category": "Network",
+          "name": "4G bands",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 18, 19, 20, 25, 26, 28, 30, 38, 39, 40, 41, 46, 48, 66, 71 - SM-G991U1"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 3",
+          "value": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - SM-G991B"
+        },
+        {
+          "category": "Network",
+          "name": "5G bands",
+          "value": "2, 5, 25, 41, 66, 71, 260, 261 SA/NSA/Sub6/mmWave - SM-G991U1"
+        },
+        {
+          "category": "Network",
+          "name": "Additional 4",
+          "value": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 66, 77, 78 SA/NSA/Sub6 - SM-G991B"
+        },
+        {
+          "category": "Network",
+          "name": "Speed",
+          "value": "HSPA 42.2/5.76 Mbps, LTE (7CA) Cat20 2000/200 Mbps, 5G (5+ Gbps DL)"
+        },
+        {
+          "category": "Launch",
+          "name": "Announced",
+          "value": "2021, January 14"
+        },
+        {
+          "category": "Launch",
+          "name": "Status",
+          "value": "Available. Released 2021, January 29"
+        },
+        {
+          "category": "Body",
+          "name": "Dimensions",
+          "value": "151.7 x 71.2 x 7.9 mm (5.97 x 2.80 x 0.31 in)"
+        },
+        {
+          "category": "Body",
+          "name": "Weight",
+          "value": "169 g (Sub6), 171 g (mmWave) (5.96 oz)"
+        },
+        {
+          "category": "Body",
+          "name": "Build",
+          "value": "Glass front (Gorilla Glass Victus), plastic back, aluminum frame"
+        },
+        {
+          "category": "Body",
+          "name": "SIM",
+          "value": "Nano-SIM + eSIM · Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "category": "Body",
+          "name": "Additional 1",
+          "value": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
+        },
+        {
+          "category": "Display",
+          "name": "Type",
+          "value": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1300 nits (peak)"
+        },
+        {
+          "category": "Display",
+          "name": "Size",
+          "value": "6.2 inches, 94.1 cm 2 (~87.2% screen-to-body ratio)"
+        },
+        {
+          "category": "Display",
+          "name": "Resolution",
+          "value": "1080 x 2400 pixels, 20:9 ratio (~421 ppi density)"
+        },
+        {
+          "category": "Display",
+          "name": "Protection",
+          "value": "Corning Gorilla Glass Victus"
+        },
+        {
+          "category": "Platform",
+          "name": "OS",
+          "value": "Android 11, up to 4 major OS updates, One UI 7"
+        },
+        {
+          "category": "Platform",
+          "name": "Chipset",
+          "value": "Exynos 2100 (5 nm) - International Qualcomm SM8350 Snapdragon 888 5G (5 nm) - USA/China"
+        },
+        {
+          "category": "Platform",
+          "name": "CPU",
+          "value": "Octa-core (1x2.9 GHz Cortex-X1 & 3x2.80 GHz Cortex-A78 & 4x2.2 GHz Cortex-A55) - International Octa-core (1x2.84 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55) - USA/China"
+        },
+        {
+          "category": "Platform",
+          "name": "GPU",
+          "value": "Mali-G78 MP14 - International Adreno 660 - USA/China"
+        },
+        {
+          "category": "Memory",
+          "name": "Card slot",
+          "value": "No"
+        },
+        {
+          "category": "Memory",
+          "name": "Internal",
+          "value": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM"
+        },
+        {
+          "category": "Memory",
+          "name": "Additional 1",
+          "value": "UFS 3.1"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Triple",
+          "value": "12 MP, f/1.8, 26mm (wide), 1/1.76\", 1.8µm, dual pixel PDAF, OIS 64 MP, f/2.0, 29mm (telephoto), 1/1.72\", 0.8µm, PDAF, OIS, 1.1x optical zoom, 3x hybrid zoom 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Features",
+          "value": "LED flash, auto-HDR, panorama"
+        },
+        {
+          "category": "Main Camera",
+          "name": "Video",
+          "value": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240fps, HDR10+, stereo sound rec., gyro-EIS"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Single",
+          "value": "10 MP, f/2.2, 26mm (wide), 1/3.24\", 1.22µm, dual pixel PDAF"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Features",
+          "value": "HDR"
+        },
+        {
+          "category": "Selfie camera",
+          "name": "Video",
+          "value": "4K@30/60fps, 1080p@30fps"
+        },
+        {
+          "category": "Sound",
+          "name": "Loudspeaker",
+          "value": "Yes, with stereo speakers"
+        },
+        {
+          "category": "Sound",
+          "name": "3.5mm jack",
+          "value": "No"
+        },
+        {
+          "category": "Sound",
+          "name": "Additional 1",
+          "value": "High-bitrate audio support"
+        },
+        {
+          "category": "Comms",
+          "name": "WLAN",
+          "value": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct"
+        },
+        {
+          "category": "Comms",
+          "name": "Bluetooth",
+          "value": "5.0, A2DP, LE"
+        },
+        {
+          "category": "Comms",
+          "name": "Positioning",
+          "value": "GPS, GLONASS, BDS, GALILEO"
+        },
+        {
+          "category": "Comms",
+          "name": "NFC",
+          "value": "Yes"
+        },
+        {
+          "category": "Comms",
+          "name": "Radio",
+          "value": "FM radio (Snapdragon model only; market/operator dependent)"
+        },
+        {
+          "category": "Comms",
+          "name": "USB",
+          "value": "USB Type-C 3.2, OTG"
+        },
+        {
+          "category": "Features",
+          "name": "Sensors",
+          "value": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+        },
+        {
+          "category": "Features",
+          "name": "Additional 1",
+          "value": "Samsung DeX, Samsung Wireless DeX (desktop experience support)"
+        },
+        {
+          "category": "Battery",
+          "name": "Type",
+          "value": "Li-Ion 4000 mAh"
+        },
+        {
+          "category": "Battery",
+          "name": "Charging",
+          "value": "25W wired, PD3.0 15W wireless (Qi) 4.5W reverse wireless"
+        },
+        {
+          "category": "Misc",
+          "name": "Colors",
+          "value": "Phantom Gray, Phantom White, Phantom Violet, Phantom Pink"
+        },
+        {
+          "category": "Misc",
+          "name": "Models",
+          "value": "SM-G991B, SM-G991B/DS, SM-G991U, SM-G991U1, SM-G991W, SM-G991N, SM-G9910, SM-G991Q, SCG09"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR",
+          "value": "0.74 W/kg (head) 1.08 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "SAR EU",
+          "value": "0.46 W/kg (head) 1.51 W/kg (body)"
+        },
+        {
+          "category": "Misc",
+          "name": "Price",
+          "value": "$ 174.44 / € 199.00 / £ 161.00"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Performance",
+          "value": "AnTuTu: 584055 (v8) GeekBench: 3238 (v5.1) GFXBench: 60fps (ES 3.1 onscreen)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Display",
+          "value": "856 nits max brightness (measured)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Camera",
+          "value": "Photo / Video"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Loudspeaker",
+          "value": "26.4 LUFS (Good)"
+        },
+        {
+          "category": "Our Tests",
+          "name": "Battery (old)",
+          "value": "Endurance rating 93h"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 174.44,
+          "raw_text": "$ 174.44",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "EUR",
+          "amount": 199.0,
+          "raw_text": "€ 199.00",
+          "source": "GSMArena"
+        },
+        {
+          "currency": "GBP",
+          "amount": 161.0,
+          "raw_text": "£ 161.00",
+          "source": "GSMArena"
+        }
+      ]
+    }
+  ]
+}
