@@ -7,8 +7,10 @@ Endpoint groups:
 * `/phones*`         — direct access to the scraped database
 * `/health`, `/stats`— operational checks
 
-The vector index is built during startup rather than on the first request, so no
-user request pays the embedding cost.
+The vector index and the generative model are both loaded during startup rather
+than on the first request, so no user request pays that cost — and the model's
+lazy backend imports happen on one thread instead of racing inside the worker
+pool.
 """
 
 from __future__ import annotations
@@ -37,7 +39,7 @@ from src.database.repository import (
     get_all_phones,
     get_phone_by_id,
 )
-from src.llm.provider import llm_status
+from src.llm.provider import get_llm, llm_status
 from src.rag.chatbot import get_chatbot
 
 from .schemas import (
@@ -68,7 +70,27 @@ async def lifespan(app: FastAPI):
     try:
         init_db()
         get_chatbot()
-        logger.info("Startup complete — chatbot and vector index ready")
+        # Load the generative model here, on the single-threaded startup path,
+        # rather than lazily inside the first request. Transformers imports
+        # some of its backends (accelerate among them) on first model load, and
+        # doing that from a uvicorn worker thread can race another thread
+        # importing the same package — surfacing as "cannot import name
+        # 'AcceleratorState' from partially initialized module". Warming up
+        # here also means no user request pays the model-load cost.
+        warm = get_llm()
+        if warm is not None:
+            # Loading the weights is not enough: transformers defers some
+            # backend imports (accelerate.big_modeling among them) until the
+            # first actual generate() call. Left to happen inside a uvicorn
+            # worker thread, that import can race another thread and fail with
+            # "partially initialized module". One throwaway token here forces
+            # the whole path — load, dispatch, generate — onto the startup
+            # thread while nothing else is running.
+            try:
+                warm.chat([{"role": "user", "content": "ok"}], max_new_tokens=1)
+            except Exception as exc:
+                logger.warning("Model warm-up generation failed: %s", exc)
+        logger.info("Startup complete — chatbot, index and model ready")
     except Exception as exc:
         # A failed warm-up must not stop the app: /health then reports exactly
         # what is broken, which beats an opaque crash at boot.

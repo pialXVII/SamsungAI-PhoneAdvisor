@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-31T20:08:03.964971",
+  "scraped_at": "2026-08-31T20:50:22.866787",
   "source": "GSMArena",
   "count": 15,
   "phones": [
@@ -2977,7 +2977,7 @@
       "charging_watts": 25.0,
       "colors": "Lime, Graphite, Violet, White",
       "models": "SM-A546V, SM-A546U, SM-A546U1, SM-A546B, SM-A546B/DS, SM-A546E, SM-A546E/DS, SM-A5460, SM-A546M, SM-A546M/DS, SM-A546W",
-      "price_text": "$ 154.11 / € 225.07 / £ 179.00",
+      "price_text": "$ 153.90 / € 225.07 / £ 179.00",
       "raw_specifications": [
         {
           "category": "Network",
@@ -3212,7 +3212,7 @@
         {
           "category": "Misc",
           "name": "Price",
-          "value": "$ 154.11 / € 225.07 / £ 179.00"
+          "value": "$ 153.90 / € 225.07 / £ 179.00"
         },
         {
           "category": "Our Tests",
@@ -3248,8 +3248,8 @@
       "prices": [
         {
           "currency": "USD",
-          "amount": 154.11,
-          "raw_text": "$ 154.11",
+          "amount": 153.9,
+          "raw_text": "$ 153.90",
           "source": "GSMArena"
         },
         {
@@ -4411,7 +4411,7 @@
       "charging_watts": 25.0,
       "colors": "Phantom Black, White, Pink Gold, Green, Graphite, Sky Blue, Violet, Cream, Bora Purple",
       "models": "SM-S901B, SM-S901B/DS, SM-S901U, SM-S901U1, SM-S901W, SM-S901N, SM-S9010, SM-S901E, SM-S901E/DS",
-      "price_text": "$ 195.00 / € 239.00 / £ 193.93",
+      "price_text": "$ 193.04 / € 239.00 / £ 193.99",
       "raw_specifications": [
         {
           "category": "Network",
@@ -4671,7 +4671,7 @@
         {
           "category": "Misc",
           "name": "Price",
-          "value": "$ 195.00 / € 239.00 / £ 193.93"
+          "value": "$ 193.04 / € 239.00 / £ 193.99"
         },
         {
           "category": "Our Tests",
@@ -4702,8 +4702,8 @@
       "prices": [
         {
           "currency": "USD",
-          "amount": 195.0,
-          "raw_text": "$ 195.00",
+          "amount": 193.04,
+          "raw_text": "$ 193.04",
           "source": "GSMArena"
         },
         {
@@ -4714,8 +4714,8 @@
         },
         {
           "currency": "GBP",
-          "amount": 193.93,
-          "raw_text": "£ 193.93",
+          "amount": 193.99,
+          "raw_text": "£ 193.99",
           "source": "GSMArena"
         }
       ]
