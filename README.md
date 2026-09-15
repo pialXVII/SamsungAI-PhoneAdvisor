@@ -8,6 +8,8 @@ FastAPI service with a browser UI.
 
 Everything runs locally. No paid API keys are required at any point.
 
+Demonstration Video: https://drive.google.com/file/d/1SZlPPyFpmD1KtO8cnyuj8hmZKPmgcw06/view?usp=sharing
+
 ---
 
 ## What it does
