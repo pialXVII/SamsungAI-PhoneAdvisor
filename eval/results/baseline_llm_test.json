@@ -1,0 +1,4755 @@
+{
+  "meta": {
+    "mode": "llm",
+    "split": "test",
+    "limit": null,
+    "dataset": "eval\\dataset.jsonl",
+    "command": "python -m eval.run_eval --mode llm --split test --out eval/results/baseline_llm_test.json",
+    "revision": "53b8c99 (HEAD src/rag/*.py, run from a scratch copy)",
+    "started_at": "2026-09-28 08:23:08",
+    "wall_seconds": 389.7,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "llm_temperature": 0.2,
+    "rag_top_k": 5,
+    "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct, template",
+    "python": "3.13.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "overall": {
+    "n": 92,
+    "intent_correct": {
+      "mean": 0.7826,
+      "n": 92
+    },
+    "phone_correct": {
+      "mean": 0.7667,
+      "n": 60
+    },
+    "hit@1": {
+      "mean": 0.9091,
+      "n": 44
+    },
+    "recall@5": {
+      "mean": 0.9545,
+      "n": 44
+    },
+    "mrr": {
+      "mean": 0.9318,
+      "n": 44
+    },
+    "superlative_correct": {
+      "mean": 0.7,
+      "n": 10
+    },
+    "superlative_correct_tied": {
+      "mean": 0.7,
+      "n": 10
+    },
+    "recommendation_correct": {
+      "mean": 1.0,
+      "n": 7
+    },
+    "comparison_coverage": {
+      "mean": 0.875,
+      "n": 16
+    },
+    "fact_recall": {
+      "mean": 0.8,
+      "n": 70
+    },
+    "facts_all_present": {
+      "mean": 0.7429,
+      "n": 70
+    },
+    "numeric_faithfulness": {
+      "mean": 0.9603,
+      "n": 81
+    },
+    "numerically_faithful": {
+      "mean": 0.8642,
+      "n": 81
+    },
+    "ood_decline_rate": {
+      "mean": 0.7333,
+      "n": 15
+    },
+    "false_decline_rate": {
+      "mean": 0.0,
+      "n": 77
+    },
+    "latency_ms": {
+      "p50": 2728.5,
+      "p95": 14826.4,
+      "mean": 4026.3
+    }
+  },
+  "per_category": {
+    "comparison": {
+      "n": 16,
+      "intent_correct": {
+        "mean": 0.875,
+        "n": 16
+      },
+      "phone_correct": {
+        "mean": 0.75,
+        "n": 16
+      },
+      "comparison_coverage": {
+        "mean": 0.875,
+        "n": 16
+      },
+      "fact_recall": {
+        "mean": 0.8125,
+        "n": 16
+      },
+      "facts_all_present": {
+        "mean": 0.75,
+        "n": 16
+      },
+      "numeric_faithfulness": {
+        "mean": 0.9625,
+        "n": 16
+      },
+      "numerically_faithful": {
+        "mean": 0.75,
+        "n": 16
+      },
+      "false_decline_rate": {
+        "mean": 0.0,
+        "n": 16
+      },
+      "latency_ms": {
+        "p50": 6139.8,
+        "p95": 20785.8,
+        "mean": 8802.0
+      }
+    },
+    "out_of_domain": {
+      "n": 15,
+      "intent_correct": {
+        "mean": 0.9333,
+        "n": 15
+      },
+      "numeric_faithfulness": {
+        "mean": 0.6875,
+        "n": 4
+      },
+      "numerically_faithful": {
+        "mean": 0.5,
+        "n": 4
+      },
+      "ood_decline_rate": {
+        "mean": 0.7333,
+        "n": 15
+      },
+      "latency_ms": {
+        "p50": 1126.3,
+        "p95": 11071.6,
+        "mean": 2035.8
+      }
+    },
+    "paraphrase": {
+      "n": 15,
+      "intent_correct": {
+        "mean": 0.2,
+        "n": 15
+      },
+      "phone_correct": {
+        "mean": 0.3333,
+        "n": 15
+      },
+      "hit@1": {
+        "mean": 0.7333,
+        "n": 15
+      },
+      "recall@5": {
+        "mean": 0.8667,
+        "n": 15
+      },
+      "mrr": {
+        "mean": 0.8,
+        "n": 15
+      },
+      "fact_recall": {
+        "mean": 0.7667,
+        "n": 15
+      },
+      "facts_all_present": {
+        "mean": 0.6667,
+        "n": 15
+      },
+      "numeric_faithfulness": {
+        "mean": 0.9444,
+        "n": 15
+      },
+      "numerically_faithful": {
+        "mean": 0.8667,
+        "n": 15
+      },
+      "false_decline_rate": {
+        "mean": 0.0,
+        "n": 15
+      },
+      "latency_ms": {
+        "p50": 1664.1,
+        "p95": 7352.7,
+        "mean": 2754.2
+      }
+    },
+    "price": {
+      "n": 7,
+      "intent_correct": {
+        "mean": 0.5714,
+        "n": 7
+      },
+      "phone_correct": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "hit@1": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "recall@5": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "mrr": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "fact_recall": {
+        "mean": 0.7857,
+        "n": 7
+      },
+      "facts_all_present": {
+        "mean": 0.5714,
+        "n": 7
+      },
+      "numeric_faithfulness": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "numerically_faithful": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "false_decline_rate": {
+        "mean": 0.0,
+        "n": 7
+      },
+      "latency_ms": {
+        "p50": 891.3,
+        "p95": 2182.6,
+        "mean": 1150.2
+      }
+    },
+    "recommendation": {
+      "n": 7,
+      "intent_correct": {
+        "mean": 0.7143,
+        "n": 7
+      },
+      "recommendation_correct": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "numeric_faithfulness": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "numerically_faithful": {
+        "mean": 1.0,
+        "n": 7
+      },
+      "false_decline_rate": {
+        "mean": 0.0,
+        "n": 7
+      },
+      "latency_ms": {
+        "p50": 4893.6,
+        "p95": 5947.3,
+        "mean": 4700.8
+      }
+    },
+    "spec_lookup": {
+      "n": 22,
+      "intent_correct": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "phone_correct": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "hit@1": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "recall@5": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "mrr": {
+        "mean": 1.0,
+        "n": 22
+      },
+      "fact_recall": {
+        "mean": 0.9091,
+        "n": 22
+      },
+      "facts_all_present": {
+        "mean": 0.9091,
+        "n": 22
+      },
+      "numeric_faithfulness": {
+        "mean": 0.9943,
+        "n": 22
+      },
+      "numerically_faithful": {
+        "mean": 0.9545,
+        "n": 22
+      },
+      "false_decline_rate": {
+        "mean": 0.0,
+        "n": 22
+      },
+      "latency_ms": {
+        "p50": 2346.1,
+        "p95": 12616.6,
+        "mean": 3554.9
+      }
+    },
+    "superlative": {
+      "n": 10,
+      "intent_correct": {
+        "mean": 1.0,
+        "n": 10
+      },
+      "superlative_correct": {
+        "mean": 0.7,
+        "n": 10
+      },
+      "superlative_correct_tied": {
+        "mean": 0.7,
+        "n": 10
+      },
+      "fact_recall": {
+        "mean": 0.6,
+        "n": 10
+      },
+      "facts_all_present": {
+        "mean": 0.6,
+        "n": 10
+      },
+      "numeric_faithfulness": {
+        "mean": 0.959,
+        "n": 10
+      },
+      "numerically_faithful": {
+        "mean": 0.8,
+        "n": 10
+      },
+      "false_decline_rate": {
+        "mean": 0.0,
+        "n": 10
+      },
+      "latency_ms": {
+        "p50": 3592.7,
+        "p95": 6971.3,
+        "mean": 3857.0
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "comparison-003",
+      "split": "test",
+      "category": "comparison",
+      "question": "Samsung Galaxy S23 vs Samsung Galaxy S24: which has the better camera?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S23",
+        "Samsung Galaxy S24"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S23",
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Camera",
+          "score": 0.7016
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Camera",
+          "score": 0.691
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 17367.1,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S23 and Samsung Galaxy S24 both feature a triple-camera setup with a main camera of 50 megapixels (MP) and a wide-angle lens of 24mm. Both cameras also include a telephoto lens of 70mm and an ultrawide lens of 13mm. The main difference lies in the resolution of the ultrawide lens, with the S23 having a 1/2.55-inch sensor while the S24 has a 1/3.94-inch sensor. This means the S24's ultrawide lens captures more detail in a smaller field of view.\n\nBoth phones support 8K video recording at 24/30 fps, 4K video at 30/60 fps, and 1080p video at 30/60/120/240 fps. They both offer HDR10+ support and stereo sound recording. The S23 supports gyro-EIS stabilization, while the S24 does not.\n\nIn terms of performance, both phones have the same chipset (Qualcomm SM8550-AC Snapdragon 8 Gen 2) and GPU (Adreno 740). The S23 has 128GB of storage, while the S24 offers 256GB of storage. The S23 has 8GB of RAM, while the S24 has 12GB of RAM.\n\nGiven these specifications, the Samsung Galaxy S24 appears to be slightly stronger in terms of camera quality due to its larger sensor size, which allows for better low-light performance and higher resolution in the ultrawide shot. However, both phones offer similar capabilities in other areas such as video recording, HDR support, and stereo sound. The choice between the two would depend on whether you prioritize the larger sensor for better low-light photography or if you prefer the additional storage capacity."
+    },
+    {
+      "id": "comparison-004",
+      "split": "test",
+      "category": "comparison",
+      "question": "Compare the weight of the Galaxy S23 versus the Samsung S24.",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S23",
+        "Samsung Galaxy S24"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S23",
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [
+        "design"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Design and build",
+          "score": 0.6888
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2209.0,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S23 weighs 168 grams, while the Samsung S24 weighs 167 grams or 168 grams. The S23 is slightly heavier than the S24."
+    },
+    {
+      "id": "comparison-005",
+      "split": "test",
+      "category": "comparison",
+      "question": "Is the Samsung S24 lighter than the Samsung Galaxy S25?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S24",
+        "Samsung Galaxy S25"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S24",
+        "Samsung Galaxy S25"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "spec_sheet"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2922.8,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S24 is lighter than the Samsung Galaxy S25. The S24 weighs 167 grams (5.89 oz), while the S25 weighs 162 grams (5.71 oz). This means the S24 is approximately 5 grams lighter than the S25."
+    },
+    {
+      "id": "comparison-011",
+      "split": "test",
+      "category": "comparison",
+      "question": "Is the S24 Ultra camera better than the S25 Ultra?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Camera",
+          "score": 0.6824
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Camera",
+          "score": 0.6512
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 12547.7,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S24 Ultra has a slightly better camera system compared to the Samsung Galaxy S25 Ultra. The S24 Ultra features a quad-camera setup with a 200 MP wide lens, 10 MP ultra-wide lens, 50 MP telephoto lens, and 12 MP ultrawide lens. This configuration offers more focal lengths and a wider range of shooting capabilities, making it potentially more versatile for various photography tasks.\n\nIn contrast, the S25 Ultra's main camera is also a quad-lens setup but with fewer lenses and a different focal length distribution. It includes a 200 MP wide lens, 10 MP ultra-wide lens, 50 MP telephoto lens, and 12 MP ultrawide lens, but the focal lengths are less diverse compared to the S24 Ultra.\n\nThe S24 Ultra's additional ultrawide lens allows for capturing wider angles and more depth in photos, which can be particularly useful in certain scenarios such as landscape photography or when capturing large subjects. This feature is absent in the S25 Ultra, where the ultrawide lens is only available on the 1TB model.\n\nTherefore, the S24 Ultra camera system is considered stronger in terms of versatility and coverage of focal lengths, making it potentially better suited for a broader range of photography needs compared to the S25 Ultra."
+    },
+    {
+      "id": "comparison-012",
+      "split": "test",
+      "category": "comparison",
+      "question": "Samsung Galaxy S25 Ultra or S24 Ultra for gaming?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Performance",
+          "score": 0.7525
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Performance",
+          "score": 0.674
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 6108.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S24 Ultra is stronger for gaming compared to the Samsung Galaxy S25 Ultra. The S24 Ultra features a Qualcomm SM8650-AC Snapdragon 8 Gen 3 chipset with a 4nm process, which offers better performance and efficiency than the S25 Ultra's Qualcomm SM8750-AC Snapdragon 8 Elite (3nm) chip. This results in faster processing speeds and better performance in demanding games. Additionally, the S24 Ultra has a higher resolution display (1440 x 3120 pixels) and a larger battery capacity (5000mAh), providing more power for extended gaming sessions without frequent charging."
+    },
+    {
+      "id": "comparison-013",
+      "split": "test",
+      "category": "comparison",
+      "question": "Compare the camera of the S21 Ultra and the S25 Ultra.",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S21 Ultra 5G",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S21 Ultra 5G",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Camera",
+          "score": 0.6893
+        },
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "Camera",
+          "score": 0.6606
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 12470.2,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S21 Ultra 5G has a stronger main camera system compared to the Samsung Galaxy S25 Ultra. The S21 Ultra's main camera features include:\n\n- A quad-camera setup with four lenses.\n- Four cameras: 108 MP wide, 10 MP ultra-wide, 10 MP periscope telephoto, and 12 MP ultrawide.\n- All cameras use PDAF (Phase Detection Autofocus).\n- The wide lens supports OIS (Optical Image Stabilization).\n- The telephoto lens supports OIS and 3x optical zoom.\n- The ultrawide lens supports OIS and 120° field of view.\n\nIn contrast, the S25 Ultra's main camera features include:\n\n- A single 200 MP wide lens.\n- No telephoto or ultrawide lenses.\n- No OIS support.\n- No optical zoom capabilities.\n\nThe S21 Ultra's quad-camera setup offers more flexibility in terms of focal lengths and zoom capabilities, allowing for better versatility in photography. The inclusion of a wide lens with OIS also enhances the overall image stabilization and low-light performance. Therefore, the S21 Ultra's camera system is considered stronger in terms of its ability to capture a wider range of scenes and maintain sharpness even in challenging lighting conditions."
+    },
+    {
+      "id": "comparison-014",
+      "split": "test",
+      "category": "comparison",
+      "question": "Samsung S25 Ultra or Galaxy S21 Ultra for gaming?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S21 Ultra 5G"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S21 Ultra 5G",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Performance",
+          "score": 0.7373
+        },
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "Performance",
+          "score": 0.6717
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 14826.4,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra is generally considered stronger for gaming compared to the Samsung Galaxy S21 Ultra 5G based on the following specifications:\n\n1. **CPU**: The S25 Ultra features an octa-core processor with higher clock speeds (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M) compared to the S21 Ultra's octa-core (1x2.9 GHz Cortex-X1 & 3x2.80 GHz Cortex-A78 & 4x2.2 GHz Cortex-A55). This provides better performance for demanding games.\n\n2. **GPU**: The S25 Ultra has an Adreno 830 GPU, which is more powerful than the Mali-G78 MP14 found in the S21 Ultra. The Adreno 830 offers better performance and efficiency for high-end graphics-intensive games.\n\n3. **Memory**: Both devices have similar memory configurations, but the S25 Ultra has a larger capacity of 1TB, which can provide additional RAM for multitasking and game performance.\n\n4. **Display**: While both have high-resolution displays, the S25 Ultra's Dynamic LTPO AMOLED 2X display with 120Hz refresh rate and HDR10+ support may offer a slight edge in smoothness and color accuracy for certain games.\n\nIn conclusion, the Samsung Galaxy S25 Ultra is likely to be stronger for gaming due to its superior CPU and GPU capabilities, along with potentially better display quality. However, the exact performance difference would depend on the specific games being played and the individual hardware configurations."
+    },
+    {
+      "id": "comparison-016",
+      "split": "test",
+      "category": "comparison",
+      "question": "Is the Z Fold6 lighter than the Z Fold5?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold6",
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy Z Fold5",
+        "Samsung Galaxy Z Fold6"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "spec_sheet"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 6139.8,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "Yes, the Samsung Galaxy Z Fold6 is lighter than the Samsung Galaxy Z Fold5.\n\nThe Z Fold6 weighs 239 grams, while the Z Fold5 weighs 253 grams. Therefore, the Z Fold6 is 14 grams lighter than the Z Fold5.\n\nThis difference is due to the following specific figures:\n- The Z Fold6 has a weight of 239 grams.\n- The Z Fold5 has a weight of 253 grams.\n- The difference between these weights is 253 - 239 = 14 grams.\n\nThus, the Z Fold6 is lighter by 14 grams compared to the Z Fold5."
+    },
+    {
+      "id": "comparison-017",
+      "split": "test",
+      "category": "comparison",
+      "question": "Is the Samsung Galaxy Z Fold5 camera better than the Galaxy Z Flip5?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold5",
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy Z Flip5",
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Camera",
+          "score": 0.6766
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Camera",
+          "score": 0.6754
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 20785.8,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Fold5 camera is generally considered stronger than the Samsung Galaxy Z Flip5 camera. Here's the comparison based on the specifications provided:\n\n1. **Main Camera Quality**:\n   - **Galaxy Z Fold5**: 50 MP, f/1.8, 23mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS\n   - **Galaxy Z Flip5**: 12 MP, f/1.8, 24mm (wide), 1/1.76\", 1.8µm, dual pixel PDAF, OIS\n\nThe Galaxy Z Fold5 has a higher megapixel count (50 MP vs 12 MP) and a larger sensor area (1/1.56\" vs 1/1.76\"). These factors contribute to better image quality and lower noise levels. Additionally, the Galaxy Z Fold5 uses a dual-pixel PDAF system, which can improve autofocus performance, especially in low-light conditions.\n\n2. **Video Capabilities**:\n   - **Galaxy Z Fold5**: Supports 8K@30fps, 4K@60fps, 1080p@60/240fps (gyro-EIS), HDR10+\n   - **Galaxy Z Flip5**: Supports 4K@30/60fps, 1080p@60/240fps (gyro-EIS), HDR10+\n\nBoth models support similar video resolutions and formats, but the Galaxy Z Fold5 offers higher frame rates and more advanced features like gyro-EIS stabilization, which can be beneficial for capturing smooth videos.\n\n3. **Selfie Camera**:\n   - **Galaxy Z Fold5**: 4 MP, f/1.8, 26mm (wide), 1/3.0\", 2.0µm, under display Cover camera: 10 MP, f/2.2, 24mm (wide), 1/3.0\", 1.22µm\n   - **Galaxy Z Flip5**: 10 MP, f/2.2, 23mm (wide), 1/3.0\", 1.22µm\n\nThe Galaxy Z Fold5 has a slightly higher megapixel count (4 MP vs 10"
+    },
+    {
+      "id": "comparison-021",
+      "split": "test",
+      "category": "comparison",
+      "question": "Compare the weight of the Samsung Galaxy S25 versus the Samsung Galaxy S21 5G.",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S21 5G",
+        "Samsung Galaxy S25"
+      ],
+      "pred_aspects": [
+        "design",
+        "connectivity"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Design and build",
+          "score": 0.6883
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Connectivity and features",
+          "score": 0.6295
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Connectivity and features",
+          "score": 0.6253
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3024.0,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S25 weighs 162 grams, while the Samsung Galaxy S21 5G weighs 169 grams. The Samsung Galaxy S25 is slightly lighter than the Samsung Galaxy S21 5G."
+    },
+    {
+      "id": "comparison-022",
+      "split": "test",
+      "category": "comparison",
+      "question": "Galaxy S21 vs Galaxy S25: which has the better camera?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S21 5G",
+        "Samsung Galaxy S25"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S21 5G",
+        "Samsung Galaxy S25"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Camera",
+          "score": 0.677
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Camera",
+          "score": 0.6615
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 14901.4,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S25 has an advantage in the main camera quality compared to the Samsung Galaxy S21 5G. The S25's main camera features include:\n\n- A triple lens setup with 50 MP, 10 MP, and 12 MP sensors.\n- Dual pixel PDAF technology across all lenses.\n- Optical zoom capabilities of 3x and 1.1x.\n- 3x hybrid zoom option.\n- 120-degree ultrawide angle.\n- 10-bit HDR support.\n- Stereo sound recording.\n- Gyro-EIS stabilization.\n\nIn contrast, the S21 5G's main camera is described as having:\n\n- A single 12 MP sensor.\n- Dual pixel PDAF technology.\n- 1.1x optical zoom.\n- 3x hybrid zoom option.\n- 120-degree ultrawide angle.\n- 10-bit HDR support.\n- Stereo sound recording.\n- Gyro-EIS stabilization.\n\nWhile both phones offer similar features like LED flash, auto-HDR, and panorama, the S25's triple-lens setup with higher resolution and more advanced zoom capabilities makes it superior in this aspect. Additionally, the S25's 10-bit HDR support and stereo sound recording are unique to this model, further enhancing its photography capabilities. Therefore, the Samsung Galaxy S25 is considered stronger in terms of main camera quality compared to the Samsung Galaxy S21 5G."
+    },
+    {
+      "id": "comparison-024",
+      "split": "test",
+      "category": "comparison",
+      "question": "What's the difference between the Samsung Galaxy Z Fold6 and Galaxy S24 Ultra batteries?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold6",
+        "Samsung Galaxy S24 Ultra"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy Z Fold6"
+      ],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Battery and charging",
+          "score": 0.6877
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "Battery and charging",
+          "score": 0.6424
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 8196.2,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "comparison_coverage": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Fold6 has a larger battery capacity of 4400 mAh compared to the Samsung Galaxy S24 Ultra's 5000 mAh. The Z Fold6's battery is 26% smaller than the S24 Ultra's, indicating that the Z Fold6 has a more compact battery design. However, both phones offer similar charging capabilities with the S24 Ultra capable of reaching 50% charge in 30 minutes via wired charging at 45W, while the Z Fold6 can achieve this same level of charge in 30 minutes via wireless charging at 15W. Both phones support Qi wireless charging and 4.5W reverse wireless charging. Therefore, the Z Fold6 offers a slightly better overall battery performance due to its smaller size, but both models provide adequate power for their respective use cases."
+    },
+    {
+      "id": "comparison-025",
+      "split": "test",
+      "category": "comparison",
+      "question": "Is the S23 Ultra lighter than the Samsung Galaxy S23?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S23 Ultra",
+        "Samsung Galaxy S23"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Overview",
+          "score": 0.6873
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Battery and charging",
+          "score": 0.6764
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Design and build",
+          "score": 0.6678
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Pricing",
+          "score": 0.6582
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Connectivity and features",
+          "score": 0.6287
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        6.6,
+        188.0
+      ],
+      "latency_ms": 2206.4,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "comparison_coverage": 0.5,
+        "fact_recall": 0.5,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 0.75,
+        "numerically_faithful": 0.0
+      },
+      "answer": "Yes, the Samsung Galaxy S23 Ultra is lighter than the Samsung Galaxy S23. The S23 Ultra weighs 234 grams (8.25 oz), while the S23 weighs approximately 188 grams (6.6 oz)."
+    },
+    {
+      "id": "comparison-027",
+      "split": "test",
+      "category": "comparison",
+      "question": "Compare the displays of the Samsung Galaxy S24 Ultra and the Samsung Galaxy S24.",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy S24"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S24 Ultra"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "spec_sheet"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        6.2
+      ],
+      "latency_ms": 10374.2,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "comparison_coverage": 0.5,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 0.9411764705882353,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The Samsung Galaxy S24 Ultra has a larger display with a higher resolution and a wider aspect ratio compared to the Samsung Galaxy S24. The Galaxy S24 Ultra features a 6.8-inch Dynamic LTPO AMOLED 2X display with a 120Hz refresh rate, a 2600 nits peak brightness, and a 2600:1 contrast ratio. This results in a significantly larger screen area of approximately 88.5% of the phone's total surface area.\n\nIn contrast, the Galaxy S24 has a slightly smaller display size at 6.2 inches but offers a higher resolution of 1440 x 3120 pixels, which translates to a 19.5:9 aspect ratio. The Galaxy S24 also has a slightly lower refresh rate of 120Hz, but this difference is minimal and doesn't significantly impact the overall viewing experience.\n\nTherefore, the Samsung Galaxy S24 Ultra has a stronger display in terms of screen size and resolution, making it more suitable for tasks that require a larger visual space, such as gaming, watching videos, or browsing the web. The Galaxy S24, while offering a slightly better refresh rate, falls short in terms of screen size and resolution compared to its predecessor."
+    },
+    {
+      "id": "comparison-029",
+      "split": "test",
+      "category": "comparison",
+      "question": "Samsung S25 Ultra or Samsung S25 for battery life?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S25"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Battery and charging",
+          "score": 0.7649
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        3500.0
+      ],
+      "latency_ms": 2419.2,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "comparison_coverage": 0.5,
+        "fact_recall": 0.5,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 0.8333333333333334,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra has a larger battery capacity of 5000 mAh compared to the Samsung S25, which has a capacity of 3500 mAh. Therefore, the Samsung Galaxy S25 Ultra will have longer battery life than the Samsung S25 when fully charged."
+    },
+    {
+      "id": "comparison-030",
+      "split": "test",
+      "category": "comparison",
+      "question": "Which is faster, the Galaxy S25 or the Samsung S25 Ultra?",
+      "gold_intent": "comparison",
+      "gold_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "comparison",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "spec_sheet"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Performance",
+          "score": 0.7755
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        2.8
+      ],
+      "latency_ms": 4334.0,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "comparison_coverage": 0.5,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 0.875,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra is faster than the Samsung Galaxy S25 in terms of its processor speed. The Galaxy S25 Ultra features an octa-core processor with two high-performance cores clocked at 4.47 GHz and six high-efficiency cores at 3.53 GHz, while the Galaxy S25 has a quad-core processor with four cores at 2.8 GHz. This means the Galaxy S25 Ultra offers more powerful processing capabilities, especially in demanding applications that require high computational power."
+    },
+    {
+      "id": "out_of_domain-002",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "How big is the Google Pixel 8 battery?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "Battery and charging",
+          "score": 0.4097
+        },
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Battery and charging",
+          "score": 0.3764
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Battery and charging",
+          "score": 0.3628
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1126.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "The Google Pixel 8 does not have a battery capacity listed in the provided reference data. The data only covers Samsung devices."
+    },
+    {
+      "id": "out_of_domain-004",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "Compare the iPhone 15 and the Pixel 8.",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Camera",
+          "score": 0.4178
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Camera",
+          "score": 0.3943
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Performance",
+          "score": 0.3883
+        },
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Display",
+          "score": 0.3806
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Camera",
+          "score": 0.3802
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        33.0,
+        4000.0
+      ],
+      "latency_ms": 11071.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "The iPhone 15 and Pixel 8 do not have direct specifications available in the provided data. However, I can compare some key features that might be relevant:\n\niPhone 15:\n- Display: OLED, 6.1 inches, 120Hz refresh rate, HDR10+\n- Chipset: Apple M2 chip\n- Storage options: 128GB, 256GB, 512GB, 1TB\n- Battery capacity: 33W fast charging\n\nPixel 8:\n- Display: OLED, 6.7 inches, 120Hz refresh rate, HDR10+\n- Chipset: Qualcomm Snapdragon 8 Gen 2\n- Storage options: 128GB, 256GB, 512GB, 1TB\n- Battery capacity: 4,000 mAh, wireless charging\n\nKey differences:\n- The iPhone 15 uses an Apple M2 chip, while the Pixel 8 uses a Qualcomm Snapdragon 8 Gen 2.\n- The iPhone 15 has a 120Hz display, while the Pixel 8 has a 120Hz display as well.\n- The iPhone 15 offers faster battery charging at 33W, compared to the Pixel 8's 4,000 mAh battery with wireless charging capabilities."
+    },
+    {
+      "id": "out_of_domain-008",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "Which is better for photos, Pixel 8 Pro or iPhone 15 Pro Max?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Camera",
+          "score": 0.428
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Camera",
+          "score": 0.4179
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Camera",
+          "score": 0.4105
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Camera",
+          "score": 0.402
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Camera",
+          "score": 0.396
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 5568.7,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "Based on the reference data provided, the Samsung Galaxy S22 Ultra 5G has the best camera system for photos among the devices listed. It features a quad-camera setup with a 108 MP main sensor, which offers high resolution and excellent image quality. The S22 Ultra also supports 8K video recording at 24 fps, which is superior to the 4K video capabilities of other devices like the Pixel 8 Pro and iPhone 15 Pro Max. Additionally, the S22 Ultra's 10x optical zoom and 3x periscope telephoto lens provide versatile zoom options, making it particularly strong for capturing detailed images and videos."
+    },
+    {
+      "id": "out_of_domain-009",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "What is the battery capacity of the Galaxy S20?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Battery and charging",
+          "score": 0.683
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Battery and charging",
+          "score": 0.6735
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Battery and charging",
+          "score": 0.6683
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Battery and charging",
+          "score": 0.668
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Battery and charging",
+          "score": 0.6638
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 784.8,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Galaxy S20 has a battery capacity of 3700 mAh."
+    },
+    {
+      "id": "out_of_domain-010",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "Tell me about the Galaxy Note 20 Ultra camera.",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "Camera",
+          "score": 0.6738
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Camera",
+          "score": 0.6652
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Camera",
+          "score": 0.6632
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Camera",
+          "score": 0.656
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Camera",
+          "score": 0.636
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3341.4,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "The Samsung Galaxy Note 20 Ultra is not listed in the provided reference data. The data covers multiple Samsung smartphones including the Galaxy S21 Ultra, Galaxy S24 Ultra, Galaxy S22 Ultra 5G, Galaxy S25 Ultra, and Galaxy S23 Ultra, but not the Galaxy Note 20 Ultra."
+    },
+    {
+      "id": "out_of_domain-011",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "How much is the Galaxy A15?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Pricing",
+          "score": 0.7247
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Pricing",
+          "score": 0.693
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Pricing",
+          "score": 0.6482
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "Pricing",
+          "score": 0.6469
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Pricing",
+          "score": 0.6354
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        119.99,
+        129.99,
+        169.99
+      ],
+      "latency_ms": 1798.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "numeric_faithfulness": 0.25,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The approximate market price for the Samsung Galaxy A15 is USD 129.99, EUR 169.99, and GBP 119.99."
+    },
+    {
+      "id": "out_of_domain-012",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "What chipset does the Galaxy S10 have?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Performance",
+          "score": 0.6422
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Performance",
+          "score": 0.636
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Performance",
+          "score": 0.6327
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Performance",
+          "score": 0.6294
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Performance",
+          "score": 0.6275
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2288.1,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "The Galaxy S10 does not have a chipset listed in the reference data provided. The reference data only covers Samsung Galaxy S23 FE, S22, S21, A54, and S22 Ultra 5G devices."
+    },
+    {
+      "id": "out_of_domain-014",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "How much does a Samsung Galaxy Tab S9 cost?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "price"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Pricing",
+          "score": 0.6699
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Pricing",
+          "score": 0.6588
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Pricing",
+          "score": 0.656
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Pricing",
+          "score": 0.6298
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Pricing",
+          "score": 0.6229
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        600.0
+      ],
+      "latency_ms": 2310.9,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "numeric_faithfulness": 0.5,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The approximate market price for a Samsung Galaxy Tab S9 is not directly provided in the given reference data. However, based on similar devices, the Galaxy Tab S9 typically falls within the range of around $500 to $600. Without exact pricing information, this is an estimate based on similar products."
+    },
+    {
+      "id": "out_of_domain-018",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "Recommend a good Samsung refrigerator.",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "recommendation",
+      "pred_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "ranking:battery"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2177.7,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 1.0
+      },
+      "answer": "I'm sorry, but I don't have any information about Samsung refrigerators or their specifications. The reference data provided only covers smartphones and does not include any information about household appliances like refrigerators. Therefore, I cannot make a recommendation based on this data."
+    },
+    {
+      "id": "out_of_domain-020",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "Write a Python function that reverses a string.",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [],
+      "generated_by": "template",
+      "unsupported_numbers": [
+        15.0
+      ],
+      "latency_ms": 12.8,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "I could not find anything about that in the phone database. It covers 15 Samsung models — try asking about their displays, cameras, batteries, processors or prices."
+    },
+    {
+      "id": "out_of_domain-022",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "What's the weather like in Dhaka today?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [],
+      "generated_by": "template",
+      "unsupported_numbers": [
+        15.0
+      ],
+      "latency_ms": 11.4,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "I could not find anything about that in the phone database. It covers 15 Samsung models — try asking about their displays, cameras, batteries, processors or prices."
+    },
+    {
+      "id": "out_of_domain-023",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "Hi, how are you?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [],
+      "generated_by": "template",
+      "unsupported_numbers": [
+        15.0
+      ],
+      "latency_ms": 11.2,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "I could not find anything about that in the phone database. It covers 15 Samsung models — try asking about their displays, cameras, batteries, processors or prices."
+    },
+    {
+      "id": "out_of_domain-028",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "I'm bored.",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [],
+      "generated_by": "template",
+      "unsupported_numbers": [
+        15.0
+      ],
+      "latency_ms": 10.8,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "I could not find anything about that in the phone database. It covers 15 Samsung models — try asking about their displays, cameras, batteries, processors or prices."
+    },
+    {
+      "id": "out_of_domain-029",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "Good morning!",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [],
+      "generated_by": "template",
+      "unsupported_numbers": [
+        15.0
+      ],
+      "latency_ms": 10.7,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "I could not find anything about that in the phone database. It covers 15 Samsung models — try asking about their displays, cameras, batteries, processors or prices."
+    },
+    {
+      "id": "out_of_domain-030",
+      "split": "test",
+      "category": "out_of_domain",
+      "question": "What is the meaning of life?",
+      "gold_intent": "general",
+      "gold_phones": [],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [],
+      "generated_by": "template",
+      "unsupported_numbers": [
+        15.0
+      ],
+      "latency_ms": 11.8,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 1.0
+      },
+      "answer": "I could not find anything about that in the phone database. It covers 15 Samsung models — try asking about their displays, cameras, batteries, processors or prices."
+    },
+    {
+      "id": "paraphrase-001",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How much does the A-54 go for?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy A54"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Pricing",
+          "score": 0.3535
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Battery and charging",
+          "score": 0.2867
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Overview",
+          "score": 0.2655
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Display",
+          "score": 0.2622
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 899.2,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 0.5,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The approximate market price of the Samsung Galaxy A54 is USD 153.90."
+    },
+    {
+      "id": "paraphrase-003",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "What would the S21U set me back?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy S21 Ultra 5G"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Design and build",
+          "score": 0.4648
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Display",
+          "score": 0.4628
+        },
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "Design and build",
+          "score": 0.4608
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Battery and charging",
+          "score": 0.4572
+        },
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "Battery and charging",
+          "score": 0.4521
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        1199.0
+      ],
+      "latency_ms": 935.1,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 0.0,
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 0.5,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The Samsung Galaxy S21 Ultra 5G costs $1,199.00."
+    },
+    {
+      "id": "paraphrase-005",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How much does the S22U go for?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy S22 Ultra 5G"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Pricing",
+          "score": 0.6338
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Pricing",
+          "score": 0.6065
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Pricing",
+          "score": 0.5852
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Pricing",
+          "score": 0.5851
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Overview",
+          "score": 0.5846
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1498.9,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 0.0,
+        "recall@5": 1.0,
+        "mrr": 0.5,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S22 Ultra 5G costs approximately USD 325.50, EUR 370.00, and GBP 284.99."
+    },
+    {
+      "id": "paraphrase-007",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "Is the battery on the s23fe any good?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S23 FE"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Battery and charging",
+          "score": 0.6522
+        },
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Battery and charging",
+          "score": 0.6416
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Battery and charging",
+          "score": 0.6144
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Battery and charging",
+          "score": 0.5377
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Battery and charging",
+          "score": 0.5357
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3586.9,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "Yes, the battery on the Samsung Galaxy S23 FE is quite good. It has a capacity of 4500 mAh, which is sufficient for most users' needs. The charging options are also commendable with a 25W wired charger and support for both PD3.0 and wireless charging (Reverse wireless). The 50% charge time in 30 minutes is noteworthy, indicating efficient charging capabilities. Overall, the battery performance meets the expectations for a mid-range smartphone."
+    },
+    {
+      "id": "paraphrase-008",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "What would the S23U set me back?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Overview",
+          "score": 0.5087
+        },
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Design and build",
+          "score": 0.5061
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Design and build",
+          "score": 0.5008
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Overview",
+          "score": 0.5006
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Design and build",
+          "score": 0.5006
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2238.5,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 0.0,
+        "recall@5": 0.0,
+        "mrr": 0.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S23 Ultra sets you back approximately USD 261.99, EUR 299.00, GBP 239.99, and INR 54,999.00 based on the available market prices."
+    },
+    {
+      "id": "paraphrase-012",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "What chip powers the S24U?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S24 Ultra"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Performance",
+          "score": 0.5815
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Performance",
+          "score": 0.5759
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Performance",
+          "score": 0.5545
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Performance",
+          "score": 0.5501
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Performance",
+          "score": 0.5401
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1321.9,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 0.0,
+        "recall@5": 1.0,
+        "mrr": 0.5,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm) chipset powers the Samsung Galaxy S24 Ultra."
+    },
+    {
+      "id": "paraphrase-014",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How good are the photos from the S25U?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Camera",
+          "score": 0.585
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Camera",
+          "score": 0.5815
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Camera",
+          "score": 0.5406
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "Camera",
+          "score": 0.5357
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Camera",
+          "score": 0.5346
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 7352.7,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra's main camera is rated as having a 200 MP sensor with a wide-angle lens of 24mm and a telephoto lens of 111mm. It also offers 3x optical zoom and 5x optical zoom capabilities. The reference data indicates that this camera has multi-directional phase detection autofocus (PDAF) and optical image stabilization (OIS). The camera supports features like laser autofocus, LED flash, auto-HDR, panorama, and 10-bit HDR video recording. The S25 Ultra's selfie camera is rated at 12 MP with a wide-angle lens of 26mm. For selfies, it supports 4K video recording at 30 fps. The overall performance and capabilities of the S25 Ultra's camera system are described as \"good\" based on the provided specifications."
+    },
+    {
+      "id": "paraphrase-017",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "What would the Galaxy Flip5 set me back?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Overview",
+          "score": 0.6357
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Design and build",
+          "score": 0.6327
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Connectivity and features",
+          "score": 0.606
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Display",
+          "score": 0.5757
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Performance",
+          "score": 0.5708
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 842.1,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 0.5,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Flip5 sets you back approximately USD 309.99."
+    },
+    {
+      "id": "paraphrase-019",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How long does the Galaxy Fold5 battery last?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Battery and charging",
+          "score": 0.593
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "Battery and charging",
+          "score": 0.5367
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Battery and charging",
+          "score": 0.4848
+        },
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Battery and charging",
+          "score": 0.4524
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Battery and charging",
+          "score": 0.4354
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1654.9,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Galaxy Z Fold5 has a battery capacity of 4400 mAh. According to the reference data, this device charges 50% in 30 minutes with a wired charger at 25W."
+    },
+    {
+      "id": "paraphrase-021",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "Is the Z Fold 6 fast enough for gaming?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold6"
+      ],
+      "pred_intent": "general",
+      "pred_phones": [],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "Performance",
+          "score": 0.5098
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Performance",
+          "score": 0.4648
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Performance",
+          "score": 0.3754
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3589.4,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 0.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Fold6 is generally considered to be fast enough for most gaming needs. It features a powerful Qualcomm Snapdragon 8 Gen 3 chipset with multiple cores and high clock speeds, which should handle most games comfortably. The device also has ample RAM (up to 12GB) and expandable storage options, allowing users to store large game files or additional content without limitations. However, for the most demanding games that require very high performance, the Z Fold6 may not be the fastest option available."
+    },
+    {
+      "id": "paraphrase-024",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How long does the Galaxy S22 Ultra battery last?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S22 Ultra 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S22 Ultra 5G"
+      ],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Battery and charging",
+          "score": 0.6094
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        300.0
+      ],
+      "latency_ms": 3025.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 0.6666666666666667,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The Galaxy S22 Ultra's battery capacity is 5000 mAh. According to the reference data, this battery can provide approximately 10 hours of playback time at 300 mAh per hour. However, actual usage can vary based on settings, apps, and other factors. Without specific usage details, we cannot give an exact duration, but it should last longer than the stated 10 hours."
+    },
+    {
+      "id": "paraphrase-027",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "Is the Samsung Galaxy Z Flip5 fast enough for gaming?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Performance",
+          "score": 0.6652
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 7263.4,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Flip5 is generally considered capable of handling most modern games, but its performance may vary depending on the specific game being played. The device features a Qualcomm Snapdragon 8 Gen 2 chipset, which is powerful and suitable for gaming. It has an octa-core processor with high clock speeds, including a high-performance A715 core and two A710 cores, along with three A510 cores. This configuration provides good performance for most games.\n\nHowever, for the best gaming experience, users should ensure that their device meets the minimum system requirements for the games they plan to play. Additionally, the device's 256GB storage and 8GB RAM should be sufficient for most casual gaming needs, although for more demanding games, users might want to consider upgrading to a device with more storage or higher RAM.\n\nIn summary, while the Samsung Galaxy Z Flip5 can handle most modern games, it may not be the fastest option available for gaming enthusiasts due to its relatively modest specifications compared to some other devices in the market."
+    },
+    {
+      "id": "paraphrase-028",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "Is the Samsung Galaxy S23 fast enough for gaming?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S23"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S23"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "Performance",
+          "score": 0.6706
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4424.5,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S23 is generally considered fast enough for most gaming needs, especially with its Qualcomm SM8550-AC Snapdragon 8 Gen 2 chipset. This chip offers high performance with multiple cores capable of handling demanding games efficiently. The Octa-core processor includes two high-performance cores that can handle intensive tasks quickly, making the device suitable for modern games that require significant computational power. However, the exact gaming performance may vary depending on the specific game being played and the user's hardware configuration. For the best gaming experience, users might consider upgrading to a device with more powerful components or higher-end graphics cards if necessary."
+    },
+    {
+      "id": "paraphrase-030",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "What would the Samsung Galaxy A54 set me back?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy A54"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Overview",
+          "score": 0.676
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Design and build",
+          "score": 0.6383
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Connectivity and features",
+          "score": 0.6123
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Performance",
+          "score": 0.606
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Pricing",
+          "score": 0.5868
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1664.1,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy A54 sets you back approximately USD 153.90, EUR 225.07, or GBP 179.00, depending on your location."
+    },
+    {
+      "id": "paraphrase-031",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How much does the Galaxy S21 go for?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Pricing",
+          "score": 0.7371
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Overview",
+          "score": 0.7171
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Design and build",
+          "score": 0.6542
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Battery and charging",
+          "score": 0.6354
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Performance",
+          "score": 0.6176
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1015.7,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 0.5,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The approximate market price of the Samsung Galaxy S21 5G is USD 174.44."
+    },
+    {
+      "id": "price-001",
+      "split": "test",
+      "category": "price",
+      "question": "How much is the Samsung Galaxy A54?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy A54"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Pricing",
+          "score": 0.8686
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Overview",
+          "score": 0.7767
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Design and build",
+          "score": 0.6995
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Performance",
+          "score": 0.6435
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Display",
+          "score": 0.6173
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 891.3,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 0.5,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The approximate market price of the Samsung Galaxy A54 is USD 153.90."
+    },
+    {
+      "id": "price-002",
+      "split": "test",
+      "category": "price",
+      "question": "How much is the S21?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Pricing",
+          "score": 0.6921
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Design and build",
+          "score": 0.5546
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Overview",
+          "score": 0.5505
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Battery and charging",
+          "score": 0.483
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Display",
+          "score": 0.4827
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 965.9,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 0.5,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The approximate market price of the Samsung Galaxy S21 5G is USD 174.44."
+    },
+    {
+      "id": "price-004",
+      "split": "test",
+      "category": "price",
+      "question": "How much does the Galaxy S22 cost in euros?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy S22 5G"
+      ],
+      "pred_intent": "price",
+      "pred_phones": [
+        "Samsung Galaxy S22 5G"
+      ],
+      "pred_aspects": [
+        "price"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Pricing",
+          "score": 0.758
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Overview",
+          "score": 0.6276
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 641.7,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S22 costs approximately €239.00."
+    },
+    {
+      "id": "price-009",
+      "split": "test",
+      "category": "price",
+      "question": "What is the price of the Samsung S24?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy S24"
+      ],
+      "pred_intent": "price",
+      "pred_phones": [
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [
+        "price"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Pricing",
+          "score": 0.8835
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Overview",
+          "score": 0.8128
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2182.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The approximate market price for the Samsung Galaxy S24 varies by region:\n\n- USD: $335.94\n- EUR: €395.57\n- GBP: £295.00\n- INR: ₹54,499.00"
+    },
+    {
+      "id": "price-012",
+      "split": "test",
+      "category": "price",
+      "question": "How much does the Samsung S25 Ultra cost in euros?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "price",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "price"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Pricing",
+          "score": 0.8147
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Overview",
+          "score": 0.677
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 750.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra costs approximately €767.24 in euros."
+    },
+    {
+      "id": "price-014",
+      "split": "test",
+      "category": "price",
+      "question": "How much is the Z Fold5?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Pricing",
+          "score": 0.7385
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Design and build",
+          "score": 0.6117
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Overview",
+          "score": 0.5974
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Battery and charging",
+          "score": 0.557
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Display",
+          "score": 0.5566
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 856.6,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 0.5,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The approximate market price of the Samsung Galaxy Z Fold5 is USD 974.44."
+    },
+    {
+      "id": "price-015",
+      "split": "test",
+      "category": "price",
+      "question": "What is the price of the Z Fold6?",
+      "gold_intent": "price",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold6"
+      ],
+      "pred_intent": "price",
+      "pred_phones": [
+        "Samsung Galaxy Z Fold6"
+      ],
+      "pred_aspects": [
+        "price"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "Pricing",
+          "score": 0.798
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "Overview",
+          "score": 0.6358
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1762.7,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The approximate market price for the Samsung Galaxy Z Fold6 is as follows:\n\n- USD: $1,088.99\n- EUR: €690.00\n- GBP: £550.00"
+    },
+    {
+      "id": "recommendation-001",
+      "split": "test",
+      "category": "recommendation",
+      "question": "Which Samsung phone should I buy for photography?",
+      "gold_intent": "recommendation",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:camera"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:camera"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:camera"
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "ranking:camera"
+        },
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "ranking:camera"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3914.0,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "recommendation_correct": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung phone that should be bought for photography is the Samsung Galaxy S25 Ultra, with a main camera resolution of 200.0 MP. This phone also features a battery capacity of 5000 mAh. The runner-up is the Samsung Galaxy S24 Ultra, which has the same main camera resolution of 200.0 MP but a slightly lower battery capacity of 5000 mAh compared to the S25 Ultra. Both phones offer high-quality photography capabilities, making them suitable choices for photography enthusiasts."
+    },
+    {
+      "id": "recommendation-004",
+      "split": "test",
+      "category": "recommendation",
+      "question": "I want great battery life, what do you recommend?",
+      "gold_intent": "recommendation",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy A54",
+        "Samsung Galaxy S23 Ultra",
+        "Samsung Galaxy S22 Ultra 5G",
+        "Samsung Galaxy S21 Ultra 5G"
+      ],
+      "pred_intent": "recommendation",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "ranking:battery"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4899.5,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "recommendation_correct": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "I recommend the Samsung Galaxy S23 Ultra for great battery life. This phone has a 5000 mAh battery, which is significantly larger than most other Samsung models in this list. The larger battery capacity means it can last longer on a single charge compared to phones with smaller batteries. Additionally, the S23 Ultra supports fast charging at up to 45W, allowing it to reach 65% battery in just 30 minutes, which is faster than some of the other phones in this list. The combination of a large battery and fast charging ensures that the S23 Ultra will provide excellent battery performance, even when running intensive applications or games."
+    },
+    {
+      "id": "recommendation-005",
+      "split": "test",
+      "category": "recommendation",
+      "question": "Which phone should I buy if I travel and need a battery that lasts?",
+      "gold_intent": "recommendation",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy A54",
+        "Samsung Galaxy S23 Ultra",
+        "Samsung Galaxy S22 Ultra 5G",
+        "Samsung Galaxy S21 Ultra 5G"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "ranking:battery"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3115.2,
+      "scores": {
+        "intent_correct": 0.0,
+        "declined": 0.0,
+        "recommendation_correct": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The winner is the Samsung Galaxy S25 Ultra with a battery capacity of 5000 mAh. This phone is followed closely by the Samsung Galaxy S24 Ultra, Samsung Galaxy A54, Samsung Galaxy S23 Ultra, Samsung Galaxy S22 Ultra 5G, and Samsung Galaxy S21 Ultra 5G, all of which have the same battery capacity of 5000 mAh."
+    },
+    {
+      "id": "recommendation-006",
+      "split": "test",
+      "category": "recommendation",
+      "question": "Recommend a Samsung phone for gaming.",
+      "gold_intent": "recommendation",
+      "gold_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "recommendation",
+      "pred_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "ranking:performance"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:performance"
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "ranking:performance"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:performance"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "ranking:performance"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4893.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "recommendation_correct": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "For gaming, I recommend the Samsung Galaxy S24 Ultra (2024). This device features the Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm) chipset, which is known for its high performance and support for advanced graphics. The Adreno 750 GPU provides excellent gaming capabilities, making it suitable for demanding games. Additionally, the 12GB of RAM ensures smooth multitasking and fast loading times, enhancing overall gaming experience. The Galaxy S24 Ultra also offers a large display and a good battery life, making it an ideal choice for both gaming and everyday use."
+    },
+    {
+      "id": "recommendation-009",
+      "split": "test",
+      "category": "recommendation",
+      "question": "What's an affordable phone you would recommend for a student?",
+      "gold_intent": "recommendation",
+      "gold_phones": [
+        "Samsung Galaxy S21 5G",
+        "Samsung Galaxy S21 Ultra 5G",
+        "Samsung Galaxy A54"
+      ],
+      "pred_intent": "recommendation",
+      "pred_phones": [
+        "Samsung Galaxy S21 5G",
+        "Samsung Galaxy S21 Ultra 5G",
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [
+        "price"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "ranking:price"
+        },
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "ranking:price"
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "ranking:price"
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "ranking:price"
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "ranking:price"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 5545.9,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "recommendation_correct": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "For an affordable phone that is suitable for a student, I would recommend the Samsung Galaxy A54. This phone offers a good balance between performance and affordability, making it ideal for students who may need a device for basic tasks like browsing the internet, taking notes, and occasionally playing light games or streaming content. The Galaxy A54 features a 6.4-inch AMOLED display with a high resolution of 1080 x 2400 pixels, which provides excellent visual quality and contrast. It also includes a powerful processor, ample storage, and a reliable battery, ensuring smooth operation even when running multiple apps simultaneously. Additionally, the phone's budget-friendly pricing makes it accessible to students on a tight budget while still providing a solid user experience."
+    },
+    {
+      "id": "recommendation-011",
+      "split": "test",
+      "category": "recommendation",
+      "question": "Which one should I buy for watching movies on a large display?",
+      "gold_intent": "recommendation",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold6",
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_intent": "recommendation",
+      "pred_phones": [
+        "Samsung Galaxy Z Fold6",
+        "Samsung Galaxy Z Fold5",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "display"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:display"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4590.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "recommendation_correct": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "For watching movies on a large display, you should consider the Samsung Galaxy Z Fold6 or the Samsung Galaxy Z Fold5. Both have a 7.6-inch display, which is suitable for enjoying movies in high resolution and detail. The Galaxy Z Fold6 has a battery capacity of 4400 mAh, while the Galaxy Z Fold5 has a slightly higher battery capacity of 4400 mAh. This ensures that you can watch movies without worrying about running out of power quickly. Additionally, both models offer Corning Gorilla Glass 5 protection, providing an extra layer of durability and scratch resistance."
+    },
+    {
+      "id": "recommendation-012",
+      "split": "test",
+      "category": "recommendation",
+      "question": "Recommend a light phone that is easy to carry.",
+      "gold_intent": "recommendation",
+      "gold_phones": [
+        "Samsung Galaxy S25"
+      ],
+      "pred_intent": "recommendation",
+      "pred_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S24",
+        "Samsung Galaxy S22 5G"
+      ],
+      "pred_aspects": [
+        "design"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "ranking:design"
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "ranking:design"
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "ranking:design"
+        },
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "ranking:design"
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "ranking:design"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 5947.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "recommendation_correct": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "Recommend the Samsung Galaxy S22 5G. This phone is the lightest among the options listed at 167 grams (5.89 oz) compared to the next lightest option, the Samsung Galaxy S22 Ultra 5G, which weighs 168 grams (5.89 oz). The Galaxy S22 5G has a slim design with dimensions of 146 x 70.6 x 7.6 mm (5.75 x 2.78 x 0.30 in), making it easier to carry around than larger devices like the Galaxy S22 Ultra 5G or Galaxy Z Fold6. Its lightweight nature combined with its compact size makes it ideal for those who prefer a portable device without sacrificing performance."
+    },
+    {
+      "id": "spec_lookup-001",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "How many megapixels is the Samsung A54 main camera?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy A54"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "Camera",
+          "score": 0.7122
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 792.0,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy A54's main camera has a resolution of 50 megapixels."
+    },
+    {
+      "id": "spec_lookup-004",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "How many mAh is the Samsung Galaxy S21 5G battery?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_aspects": [
+        "battery",
+        "connectivity"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Battery and charging",
+          "score": 0.7527
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Connectivity and features",
+          "score": 0.4918
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 848.8,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S21 5G battery has a capacity of 4000 mAh."
+    },
+    {
+      "id": "spec_lookup-006",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What storage options does the Samsung S21 come with?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S21 5G"
+      ],
+      "pred_aspects": [
+        "storage"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "Performance",
+          "score": 0.5596
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2466.1,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S21 comes with the following storage options:\n\n- 128GB with 6GB of RAM\n- 128GB with 8GB of RAM\n- 256GB with 8GB of RAM\n\nThese options are available for purchase, allowing users to choose based on their needs and budget."
+    },
+    {
+      "id": "spec_lookup-009",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What Android version does the Galaxy S21 Ultra ship with?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S21 Ultra 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S21 Ultra 5G"
+      ],
+      "pred_aspects": [
+        "software"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "Performance",
+          "score": 0.6326
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 709.7,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Galaxy S21 Ultra ships with Android 11."
+    },
+    {
+      "id": "spec_lookup-010",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What are the camera specs of the Samsung Galaxy S22 5G?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S22 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S22 5G"
+      ],
+      "pred_aspects": [
+        "camera",
+        "connectivity"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Camera",
+          "score": 0.7691
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Connectivity and features",
+          "score": 0.6604
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 12616.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S22 5G has the following camera specifications:\n\n- **Main Camera (Triple):**\n  - 50 MP, f/1.8, 23mm (wide)\n  - 1/1.56\" sensor, 1.0µm pixels\n  - Dual Pixel PDAF, Optical Image Stabilization (OIS)\n  - 10 MP, f/2.4, 70mm (telephoto)\n  - 1/3.94\" sensor, 1.0µm pixels\n  - PDAF, Optical Image Stabilization (OIS)\n  - 3x optical zoom\n\n- **Ultrawide Camera:**\n  - 12 MP, f/2.2, 13mm\n  - 1/2.55\" sensor, 1.4µm pixels\n  - Super Steady video mode\n\n- **Video Recording Capabilities:**\n  - 8K@24fps\n  - 4K@30/60fps\n  - 1080p@30/60/120/240fps\n  - HDR10+\n  - Stereo sound recording\n  - Gyro-EIS (Gyroscopic image stabilization)\n\n- **Selfie Camera:**\n  - 10 MP, f/2.2, 26mm (wide)\n  - 1/3.24\" sensor, 1.22µm pixels\n  - Dual Pixel PDAF\n\nThese specifications highlight the advanced imaging capabilities of the Samsung Galaxy S22 5G, including high-resolution photography and video recording options."
+    },
+    {
+      "id": "spec_lookup-011",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What screen resolution and refresh rate does the Galaxy S22 have?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S22 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S22 5G"
+      ],
+      "pred_aspects": [
+        "display"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "Display",
+          "score": 0.7591
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1214.1,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Galaxy S22 has a screen resolution of 1080 x 2340 pixels and a refresh rate of 120 Hz."
+    },
+    {
+      "id": "spec_lookup-013",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "Tell me about the Samsung Galaxy S22 Ultra 5G battery.",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S22 Ultra 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S22 Ultra 5G"
+      ],
+      "pred_aspects": [
+        "battery",
+        "connectivity"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Battery and charging",
+          "score": 0.8121
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Connectivity and features",
+          "score": 0.6688
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3232.5,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S22 Ultra 5G is equipped with a Li-Ion battery that has a capacity of 5000 mAh. This indicates that the device can store approximately 5000 milliampere-hours of electrical energy. The battery supports wired charging at a rate of 45 watts and wireless charging via Qi standard at 15 watts. Additionally, it supports reverse wireless charging at 4.5 watts."
+    },
+    {
+      "id": "spec_lookup-014",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What chipset is in the S22 Ultra?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S22 Ultra 5G"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S22 Ultra 5G"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "Performance",
+          "score": 0.6139
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 1460.2,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S22 Ultra 5G uses the Exynos 2200 chipset in Europe and the Qualcomm SM8450 Snapdragon 8 Gen 1 chipset in ROW."
+    },
+    {
+      "id": "spec_lookup-022",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What are the camera specs of the S23 Ultra?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Camera",
+          "score": 0.7625
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 14976.1,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S23 Ultra has the following camera specifications:\n\n- **Main Camera (Quad):**\n  - 200 MP, f/1.7, 24mm (wide)\n  - 1/1.3\" sensor\n  - 0.6µm pixels\n  - Multi-directional phase detection autofocus (PDAF)\n  - Optical image stabilization (OIS)\n\n- **Telephoto Camera (70mm):**\n  - 1/3.52\" sensor\n  - 1.12µm pixels\n  - Phase detection autofocus (PDAF)\n  - Optical image stabilization (OIS)\n  - 3x optical zoom\n\n- **Periscope Telephoto Camera (230mm):**\n  - 1/3.52\" sensor\n  - 1.12µm pixels\n  - Phase detection autofocus (PDAF)\n  - Optical image stabilization (OIS)\n  - 10x optical zoom\n\n- **Ultrawide Camera (120°):**\n  - 1/2.55\" sensor\n  - 1.4µm pixels\n  - Dual pixel phase detection autofocus (dual PDAF)\n  - Super steady video mode\n\n- **Selfie Camera:**\n  - 12 MP, f/2.2, 26mm (wide)\n  - 1/3.2\" sensor\n  - 1.12µm pixels\n  - Dual pixel phase detection autofocus (dual PDAF)\n\nAdditional features include:\n- Laser autofocus\n- LED flash\n- Auto-HDR\n- Panorama mode\n- 8K@24/30fps video recording\n- 4K@30/60fps video recording\n- 1080p@30/60/120/240fps video recording\n- HDR10+ support\n- Stereo sound recording\n- Gyro-EIS for video stabilization"
+    },
+    {
+      "id": "spec_lookup-023",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What processor does the Samsung S23 Ultra use?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Performance",
+          "score": 0.7277
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4534.7,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S23 Ultra uses the Qualcomm SM8550-AC Snapdragon 8 Gen 2 chipset. This is an octa-core processor with the following specifications:\n\n- 1x 3.36 GHz Cortex-X3 CPU core\n- 2x 2.8 GHz Cortex-A715 CPU cores\n- 2x 2.8 GHz Cortex-A710 CPU cores\n- 3x 2.0 GHz Cortex-A510 CPU cores\n\nThe GPU used is the Adreno 740. The device supports up to 4 major Android operating system updates."
+    },
+    {
+      "id": "spec_lookup-024",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "How much internal storage can I get on the Samsung S23 Ultra?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_aspects": [
+        "storage"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "Performance",
+          "score": 0.6795
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2912.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S23 Ultra offers expandable storage options. You can choose between:\n\n- 256GB with 8GB of RAM\n- 256GB with 12GB of RAM\n- 512GB with 12GB of RAM\n- 1TB with 12GB of RAM\n\nThese are the available internal storage capacities for the device."
+    },
+    {
+      "id": "spec_lookup-025",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What is the battery capacity of the Galaxy S24?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S24"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Battery and charging",
+          "score": 0.7795
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 714.5,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The battery capacity of the Samsung Galaxy S24 is 4000 mAh."
+    },
+    {
+      "id": "spec_lookup-026",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "How fast is wired charging on the Samsung Galaxy S24?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S24"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [
+        "battery",
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Battery and charging",
+          "score": 0.7225
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "Performance",
+          "score": 0.513
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 735.2,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S24 supports wired charging at a rate of 25 watts."
+    },
+    {
+      "id": "spec_lookup-029",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "Tell me about the Samsung Galaxy S24 Ultra.",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S24 Ultra"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S24 Ultra"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Overview",
+          "score": 0.8467
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Connectivity and features",
+          "score": 0.7647
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Performance",
+          "score": 0.7631
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Pricing",
+          "score": 0.7454
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "Display",
+          "score": 0.7452
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 11799.4,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S24 Ultra is a high-end smartphone released in January 2024. It features a 6.8-inch display with a 113.5 cm² (~88.5% screen-to-body ratio) Dynamic LTPO AMOLED 2X display that supports HDR10+ and has a peak brightness of 2600 nits. The device is powered by the Qualcomm SM8650-AC Snapdragon 8 Gen 3 (4 nm) chipset, which includes an 8-core processor with clock speeds of 1x3.39 GHz Cortex-X4, 3x3.1 GHz Cortex-A720, 2x2.9 GHz Cortex-A720, and 2x2.2 GHz Cortex-A520. The phone runs on Android 14 with up to seven major OS updates and uses One UI 8.5. It has a 5000 mAh battery and supports Wi-Fi 802.11 a/b/g/n/ac/6e/7, Bluetooth 5.3, NFC, USB Type-C 3.2, and a 3.5mm headphone jack. The phone also includes a fingerprint sensor under the display, accelerometer, gyroscope, proximity sensor, compass, and barometer. The expandable storage option is not available. The approximate market price for this device is USD 548.00, EUR 613.35, GBP 490.00, and INR 99,990.00."
+    },
+    {
+      "id": "spec_lookup-031",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "How many megapixels is the S25 main camera?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S25"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S25"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Camera",
+          "score": 0.6335
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        74.0
+      ],
+      "latency_ms": 2728.5,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 0.875,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The Samsung Galaxy S25 main camera has a triple setup with the following specifications:\n\n- First camera: 50 MP\n- Second camera: 12 MP\n- Third camera: 12 MP\n\nSo, the total number of megapixels for the main camera is 50 + 12 + 12 = 74 MP."
+    },
+    {
+      "id": "spec_lookup-033",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What chipset is in the S25?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S25"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S25"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "Performance",
+          "score": 0.6308
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3201.0,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The reference data indicates that the Samsung Galaxy S25 uses the Qualcomm SM8750-AC Snapdragon 8 Elite chipset. This is a 3nm chip designed by Qualcomm, featuring an octa-core processor with two high-performance cores clocked at 4.47 GHz and six high-efficiency cores at 3.53 GHz, along with an Adreno 830 GPU operating at 1200 MHz."
+    },
+    {
+      "id": "spec_lookup-034",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "Tell me about the Galaxy S25 Ultra battery.",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Battery and charging",
+          "score": 0.8364
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4687.9,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra is equipped with a Li-Ion battery that has a capacity of 5000 mAh. This indicates that the device can store approximately 5000 milliampere-hours of electrical energy. The battery supports fast charging through a 45W wired charger, which allows for a 65% charge to be completed in just 30 minutes. Additionally, the phone supports wireless charging via Qi2 technology, with a maximum output of 15W. For wireless charging, the device also features reverse wireless charging capability, allowing it to recharge other devices wirelessly at up to 4.5W."
+    },
+    {
+      "id": "spec_lookup-035",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "How fast is wired charging on the Galaxy S25 Ultra?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "battery",
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Battery and charging",
+          "score": 0.7421
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "Performance",
+          "score": 0.5783
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 740.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Galaxy S25 Ultra supports wired charging at a rate of 45 watts."
+    },
+    {
+      "id": "spec_lookup-037",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What sensors and USB port does the Galaxy Z Flip5 have?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_aspects": [
+        "connectivity"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Connectivity and features",
+          "score": 0.782
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2346.1,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Flip5 has the following sensors and USB port:\n\nSensors:\n- Fingerprint sensor (side-mounted)\n- Accelerometer\n- Gyro\n- Proximity sensor\n- Compass\n- Barometer\n\nUSB port:\n- USB Type-C 3.2, OTG (On-The-Go) capability"
+    },
+    {
+      "id": "spec_lookup-038",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "How much does the Galaxy Z Flip5 weigh?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Design and build",
+          "score": 0.7286
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Pricing",
+          "score": 0.6558
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Overview",
+          "score": 0.6369
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Display",
+          "score": 0.6336
+        },
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Battery and charging",
+          "score": 0.6323
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 832.4,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Flip5 weighs approximately 187 grams (6.60 oz)."
+    },
+    {
+      "id": "spec_lookup-039",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "What Android version does the Samsung Z Flip5 ship with?",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy Z Flip5"
+      ],
+      "pred_aspects": [
+        "software"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Flip5",
+          "aspect": "Performance",
+          "score": 0.693
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 512.1,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Flip5 ships with Android 13."
+    },
+    {
+      "id": "spec_lookup-041",
+      "split": "test",
+      "category": "spec_lookup",
+      "question": "Tell me about the Samsung Z Fold5 screen.",
+      "gold_intent": "spec_lookup",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_intent": "spec_lookup",
+      "pred_phones": [
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_aspects": [
+        "display"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "Display",
+          "score": 0.8003
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4146.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "phone_correct": 1.0,
+        "hit@1": 1.0,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Fold5 features a foldable Dynamic AMOLED 2X display with a size of 7.6 inches. This screen has a resolution of 1812 x 2176 pixels, providing a high-definition viewing experience. The screen also supports HDR10+ technology for enhanced color accuracy and brightness. The display is known for its 120Hz refresh rate, ensuring smooth and responsive visuals even during dynamic content like scrolling or gaming. The screen-to-body ratio is approximately 91.1%, which offers a compact yet expansive viewing area."
+    },
+    {
+      "id": "superlative-003",
+      "split": "test",
+      "category": "superlative",
+      "question": "Which model has the highest mAh rating?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [
+        "battery"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "ranking:battery"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3051.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 1.0,
+        "superlative_correct_tied": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The winner with the highest mAh rating is the Samsung Galaxy S25 Ultra at 5000 mAh. This model is followed closely by the Samsung Galaxy S24 Ultra, Samsung Galaxy A54, Samsung Galaxy S23 Ultra, Samsung Galaxy S22 Ultra 5G, and Samsung Galaxy S21 Ultra 5G, all of which have 5000 mAh batteries as well."
+    },
+    {
+      "id": "superlative-005",
+      "split": "test",
+      "category": "superlative",
+      "question": "Which phone has the highest megapixel main camera?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy S23 Ultra"
+      ],
+      "pred_aspects": [
+        "camera"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:camera"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:camera"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:camera"
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "ranking:camera"
+        },
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "ranking:camera"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3750.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 1.0,
+        "superlative_correct_tied": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra has the highest megapixel main camera with a resolution of 200.0 MP. It is followed closely by the Samsung Galaxy S24 Ultra, Samsung Galaxy S23 Ultra, Samsung Galaxy S22 Ultra 5G, and Samsung Galaxy S21 Ultra 5G, all with a resolution of 200.0 MP. The Samsung Galaxy S25 has a slightly lower megapixel count at 50.0 MP compared to the other models."
+    },
+    {
+      "id": "superlative-008",
+      "split": "test",
+      "category": "superlative",
+      "question": "Which phone has the largest screen?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold6"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy Z Fold6",
+        "Samsung Galaxy Z Fold5",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "display"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:display"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4470.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 1.0,
+        "superlative_correct_tied": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy Z Fold6 has the largest screen at 7.6 inches. It is followed closely by the Samsung Galaxy Z Fold5, also with a 7.6-inch screen. Both of these models have a battery capacity of 4400 mAh. The other phones in this list are all around the same size, with the Samsung Galaxy S25 Ultra being the smallest at 6.9 inches, followed by the Samsung Galaxy S24 Ultra and Samsung Galaxy S23 Ultra, both at 6.8 inches. All these phones have a battery capacity of 5000 mAh."
+    },
+    {
+      "id": "superlative-009",
+      "split": "test",
+      "category": "superlative",
+      "question": "Which Samsung has the biggest display?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold6"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy Z Fold6",
+        "Samsung Galaxy Z Fold5",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "display"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:display"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4072.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 1.0,
+        "superlative_correct_tied": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung with the biggest display is the Samsung Galaxy Z Fold6, with a 7.6-inch screen. This model is followed closely by the Samsung Galaxy Z Fold5, also featuring a 7.6-inch screen. Both of these models have a battery capacity of 4400 mAh. The next largest displays are held by the Samsung Galaxy S25 Ultra and the Samsung Galaxy S24 Ultra, both at 6.9 inches and 6.8 inches respectively, with a battery capacity of 5000 mAh each."
+    },
+    {
+      "id": "superlative-010",
+      "split": "test",
+      "category": "superlative",
+      "question": "Which phone has the smallest display?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy S23"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy Z Fold6",
+        "Samsung Galaxy Z Fold5",
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_aspects": [
+        "display"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold5",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:display"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:display"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 3592.7,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 0.0,
+        "superlative_correct_tied": 0.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The phone with the smallest display is the Samsung Galaxy S22 Ultra 5G, with a display size of 6.8 inches. This is followed by the Samsung Galaxy S23 Ultra, also with a 6.8-inch display, and then the Samsung Galaxy S24 Ultra and Samsung Galaxy S25 Ultra, both having a 6.9-inch display. The Samsung Galaxy Z Fold6 and Samsung Galaxy Z Fold5 have larger displays at 7.6 inches each."
+    },
+    {
+      "id": "superlative-013",
+      "split": "test",
+      "category": "superlative",
+      "question": "Which phone has the fastest charging?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy S25 Ultra"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24 Ultra",
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [
+        "battery",
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S23 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S22 Ultra 5G",
+          "aspect": "ranking:battery"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2281.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 1.0,
+        "superlative_correct_tied": 1.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra is the winner with a maximum charging speed of 25W. The runner-up is the Samsung Galaxy S24 Ultra, which also supports 25W fast charging. Both phones have the same maximum charging speed, making them equally fast chargers according to the reference data provided."
+    },
+    {
+      "id": "superlative-015",
+      "split": "test",
+      "category": "superlative",
+      "question": "What is the lightest Samsung phone?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy S25"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S24",
+        "Samsung Galaxy S22 5G"
+      ],
+      "pred_aspects": [
+        "design"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "ranking:design"
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "ranking:design"
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "ranking:design"
+        },
+        {
+          "phone": "Samsung Galaxy S23",
+          "aspect": "ranking:design"
+        },
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "ranking:design"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 4510.1,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 1.0,
+        "superlative_correct_tied": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The lightest Samsung phone is the **Samsung Galaxy S25**, weighing only **162.0 grams** with a battery capacity of 4000 mAh. This phone is followed closely by the **Samsung Galaxy S24**, which also weighs 167.0 grams but has a slightly larger battery capacity of 4000 mAh compared to the S25. The other Samsung phones listed are heavier, ranging from 167.0 grams (S22 5G) to 169.0 grams (S21 5G), with varying battery capacities."
+    },
+    {
+      "id": "superlative-016",
+      "split": "test",
+      "category": "superlative",
+      "question": "Which phone is the heaviest?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy Z Fold5"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:battery"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "ranking:battery"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        247.0
+      ],
+      "latency_ms": 3188.4,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 0.0,
+        "superlative_correct_tied": 0.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 0.6666666666666667,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The Samsung Galaxy S25 Ultra (2025) is the heaviest phone among the ones listed, weighing 247 grams. This is followed closely by the Samsung Galaxy S25 (2025), which also weighs 247 grams. Both of these phones have the same specifications as the other models in terms of processor, RAM, and GPU, making them the heaviest options available in this list."
+    },
+    {
+      "id": "superlative-019",
+      "split": "test",
+      "category": "superlative",
+      "question": "What is the cheapest phone in US dollars?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy A54"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S21 5G",
+        "Samsung Galaxy S21 Ultra 5G",
+        "Samsung Galaxy A54"
+      ],
+      "pred_aspects": [
+        "price"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S21 5G",
+          "aspect": "ranking:price"
+        },
+        {
+          "phone": "Samsung Galaxy S21 Ultra 5G",
+          "aspect": "ranking:price"
+        },
+        {
+          "phone": "Samsung Galaxy A54",
+          "aspect": "ranking:price"
+        },
+        {
+          "phone": "Samsung Galaxy S22 5G",
+          "aspect": "ranking:price"
+        },
+        {
+          "phone": "Samsung Galaxy S23 FE",
+          "aspect": "ranking:price"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [],
+      "latency_ms": 2681.6,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 0.0,
+        "superlative_correct_tied": 0.0,
+        "fact_recall": 0.0,
+        "facts_all_present": 0.0,
+        "numeric_faithfulness": 1.0,
+        "numerically_faithful": 1.0
+      },
+      "answer": "The cheapest phone in US dollars is the Samsung Galaxy S21 5G, priced at USD 174.44. The next two cheapest options are the Samsung Galaxy S22 5G, priced at USD 193.04, and the Samsung Galaxy S23 FE, priced at USD 218.99."
+    },
+    {
+      "id": "superlative-021",
+      "split": "test",
+      "category": "superlative",
+      "question": "What is the most powerful Samsung phone for gaming?",
+      "gold_intent": "superlative",
+      "gold_phones": [
+        "Samsung Galaxy S25"
+      ],
+      "pred_intent": "superlative",
+      "pred_phones": [
+        "Samsung Galaxy S25",
+        "Samsung Galaxy S25 Ultra",
+        "Samsung Galaxy S24"
+      ],
+      "pred_aspects": [
+        "performance"
+      ],
+      "top_sources": [
+        {
+          "phone": "Samsung Galaxy S25",
+          "aspect": "ranking:performance"
+        },
+        {
+          "phone": "Samsung Galaxy S25 Ultra",
+          "aspect": "ranking:performance"
+        },
+        {
+          "phone": "Samsung Galaxy S24",
+          "aspect": "ranking:performance"
+        },
+        {
+          "phone": "Samsung Galaxy S24 Ultra",
+          "aspect": "ranking:performance"
+        },
+        {
+          "phone": "Samsung Galaxy Z Fold6",
+          "aspect": "ranking:performance"
+        }
+      ],
+      "generated_by": "llm:Qwen/Qwen2.5-1.5B-Instruct",
+      "unsupported_numbers": [
+        660.0
+      ],
+      "latency_ms": 6971.3,
+      "scores": {
+        "intent_correct": 1.0,
+        "declined": 0.0,
+        "superlative_correct": 1.0,
+        "superlative_correct_tied": 1.0,
+        "fact_recall": 1.0,
+        "facts_all_present": 1.0,
+        "numeric_faithfulness": 0.9230769230769231,
+        "numerically_faithful": 0.0
+      },
+      "answer": "The most powerful Samsung phone for gaming according to the reference data is the **Samsung Galaxy S25 Ultra** (2025). It features the Qualcomm SM8750-AC Snapdragon 8 Elite processor with a GPU Adreno 830 clocked at 1200 MHz, providing a significant performance boost over the previous generation's Adreno 660. The Ultra model also offers up to 16GB of RAM, which can help manage the demanding demands of modern games.\n\nIn terms of runner-ups, the **Samsung Galaxy S24 Ultra** (2024) is also quite powerful, featuring the Qualcomm SM8650-AC Snapdragon 8 Gen 3 processor with an Adreno 750 GPU, though it has less RAM (up to 12GB) compared to the S25 Ultra. This makes it suitable for gamers who need more RAM but don't require the highest-end specifications."
+    }
+  ]
+}
