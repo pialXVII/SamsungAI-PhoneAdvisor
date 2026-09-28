@@ -15,6 +15,8 @@ measured evaluation set, Docker packaging and CI.
 retrieval hit@1 90.9% → 100%, answer fact recall 90.7% → 98.6%, 0% false declines.
 Details and caveats: [eval/results/SUMMARY.md](eval/results/SUMMARY.md).
 
+**Demo:** [huggingface.co/spaces/pialXVII/phone-advisor](https://huggingface.co/spaces/pialXVII/phone-advisor) shows the pipeline's recorded answers to all 188 evaluation questions (rebuilt by `python -m demo.build_static_demo`).
+
 Demonstration Video: https://drive.google.com/file/d/1SZlPPyFpmD1KtO8cnyuj8hmZKPmgcw06/view?usp=sharing
 
 ---

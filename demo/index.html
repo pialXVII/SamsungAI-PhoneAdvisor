@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phone Advisor: recorded answers</title>
+<meta name="description" content="Browse what a local RAG and multi-agent phone advisor answered for 188 labelled evaluation questions: intent, retrieved sources, answers and scores.">
+<style>
+  :root {
+    --bg: #fbfbf9; --surface: #fff; --fg: #16181d; --muted: #555c68; --faint: #8a909b;
+    --line: #e4e4df; --accent: #1f4e8c; --soft: #eaf0f8; --ok: #2f7d4f; --bad: #b3401a;
+    --sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1216; --surface: #151a20; --fg: #e6e8ec; --muted: #a2a9b5; --faint: #7b8391;
+      --line: #262d36; --accent: #8fb4ea; --soft: #17222f; --ok: #6cc28f; --bad: #f08a66; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 var(--sans); }
+  a { color: var(--accent); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 32px 0 18px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -.2px; }
+  .lead { color: var(--muted); margin: 0 0 10px; max-width: 46em; }
+  .note { font-size: 13px; background: var(--soft); border-radius: 8px; padding: 10px 12px; color: var(--muted); max-width: 60em; }
+  .links { font-size: 14px; margin-top: 10px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; padding: 16px 0; }
+  input[type=search] { flex: 1 1 260px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--fg); font: inherit; }
+  .chip { border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 999px; padding: 5px 11px; font: 13px var(--sans); cursor: pointer; }
+  .chip[aria-pressed=true] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  main { display: grid; grid-template-columns: 360px 1fr; gap: 20px; padding-bottom: 40px; }
+  @media (max-width: 820px) { main { grid-template-columns: 1fr; } }
+  .list { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); max-height: 70vh; overflow: auto; }
+  .list button { display: block; width: 100%; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: none; color: var(--fg); padding: 10px 12px; font: 14px/1.4 var(--sans); cursor: pointer; }
+  .list button:hover, .list button[aria-current=true] { background: var(--soft); }
+  .list small { display: block; color: var(--faint); font: 11px var(--mono); text-transform: uppercase; letter-spacing: .6px; margin-bottom: 2px; }
+  .detail { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 20px 22px; min-height: 300px; }
+  .q { font-size: 18px; font-weight: 600; margin: 0 0 12px; }
+  .meta { display: grid; grid-template-columns: 130px 1fr; gap: 4px 14px; font-size: 14px; margin: 0 0 14px; }
+  .meta dt { color: var(--faint); }
+  .meta dd { margin: 0; }
+  .tag { display: inline-block; font: 12px var(--mono); padding: 1px 7px; border-radius: 5px; background: var(--soft); margin: 0 4px 4px 0; }
+  .ok { color: var(--ok); } .bad { color: var(--bad); }
+  .tabs { display: flex; gap: 6px; margin: 6px 0 8px; }
+  pre { white-space: pre-wrap; word-wrap: break-word; font: 13.5px/1.55 var(--sans); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin: 0; max-height: 46vh; overflow: auto; }
+  .count { color: var(--faint); font-size: 13px; }
+  footer { color: var(--faint); font-size: 13px; padding: 0 0 30px; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>Phone Advisor: recorded answers</h1>
+  <p class="lead">A fully local RAG and multi-agent system over scraped Samsung phone specifications. Pick any of the 188 labelled evaluation questions to see how it was routed, which passages it retrieved, what it answered, and whether the answer was correct.</p>
+  <p class="note">These are recorded outputs of the real pipeline (after the routing fixes), not a live model: hosting a live Python app here needs a paid plan. To run it live, clone the repository and use Docker or <code>python scripts/run_api.py</code>. Template answers are deterministic; LLM answers (Qwen2.5-1.5B, test split only) were generated once on a laptop GPU.</p>
+  <div class="links">
+    <a href="https://github.com/pialXVII/SamsungAI-PhoneAdvisor">Source code</a>
+    <a href="https://github.com/pialXVII/SamsungAI-PhoneAdvisor/blob/main/eval/results/SUMMARY.md">Evaluation results</a>
+    <a href="https://portfolio-foyshal-sarkar.vercel.app/work/phone-advisor">Case study</a>
+    <span>by <a href="https://portfolio-foyshal-sarkar.vercel.app">Foyshal Sarkar</a></span>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search questions, e.g. battery, S24 Ultra, how much" aria-label="Search questions">
+    <div id="chips" role="group" aria-label="Filter by category"></div>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <nav class="list" id="list" aria-label="Questions"></nav>
+  <section class="detail" id="detail" aria-live="polite"><p class="lead">Loading…</p></section>
+</main>
+
+<footer class="wrap">Data: GSMArena snapshot of 15 Samsung models. Scores come from eval/run_eval.py.</footer>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let data = [], cat = "all", current = null, mode = "template";
+const label = (s) => s.replace(/_/g, " ");
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function renderChips() {
+  const cats = ["all", ...new Set(data.map((d) => d.category))];
+  $("chips").innerHTML = cats.map((c) =>
+    `<button class="chip" data-c="${c}" aria-pressed="${c === cat}">${label(c)}</button>`).join(" ");
+}
+
+function filtered() {
+  const term = $("q").value.trim().toLowerCase();
+  return data.filter((d) => (cat === "all" || d.category === cat) &&
+    (!term || d.question.toLowerCase().includes(term) || d.phones.join(" ").toLowerCase().includes(term)));
+}
+
+function renderList() {
+  const rows = filtered();
+  $("count").textContent = `${rows.length} of ${data.length}`;
+  $("list").innerHTML = rows.map((d) =>
+    `<button data-id="${d.id}" aria-current="${current && current.id === d.id}"><small>${label(d.category)} · ${d.split}</small>${esc(d.question)}</button>`).join("");
+}
+
+function flag(v, good = 1) {
+  if (v === undefined) return "";
+  return v === good ? '<span class="ok">yes</span>' : '<span class="bad">no</span>';
+}
+
+function renderDetail() {
+  const d = current;
+  if (!d) return;
+  const s = d.scores;
+  const hasLlm = !!d.llm_answer;
+  if (!hasLlm) mode = "template";
+  const answer = mode === "llm" ? d.llm_answer : d.answer;
+  const sources = d.sources.map((x) =>
+    `<span class="tag">${esc(x.phone.replace("Samsung Galaxy ", ""))} · ${esc(x.aspect)}${x.score ? " · " + x.score.toFixed(2) : ""}</span>`).join("") || "none";
+  $("detail").innerHTML = `
+    <p class="q">${esc(d.question)}</p>
+    <dl class="meta">
+      <dt>Routed as</dt><dd><span class="tag">${esc(d.intent)}</span> intent correct: ${flag(s.intent_correct)}</dd>
+      <dt>Phones</dt><dd>${d.phones.length ? d.phones.map(esc).join(", ") : "none resolved"}</dd>
+      <dt>Retrieved</dt><dd>${sources}</dd>
+      <dt>Result</dt><dd>${s.declined ? "declined (out of scope)" : `facts found: ${s.fact_recall === undefined ? "n/a" : Math.round(s.fact_recall * 100) + "%"}`} · ${d.latency_ms} ms</dd>
+    </dl>
+    <div class="tabs">
+      <button class="chip" data-m="template" aria-pressed="${mode === "template"}">Template answer</button>
+      ${hasLlm ? `<button class="chip" data-m="llm" aria-pressed="${mode === "llm"}">LLM answer (Qwen2.5-1.5B)</button>` : ""}
+    </div>
+    <pre>${esc(answer)}</pre>`;
+}
+
+$("chips").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-c]"); if (!b) return;
+  cat = b.dataset.c; renderChips(); renderList();
+});
+$("list").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-id]"); if (!b) return;
+  current = data.find((d) => d.id === b.dataset.id); renderList(); renderDetail();
+});
+$("detail").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-m]"); if (!b) return;
+  mode = b.dataset.m; renderDetail();
+});
+$("q").addEventListener("input", renderList);
+
+fetch("data.json").then((r) => r.json()).then((rows) => {
+  data = rows;
+  current = data.find((d) => d.llm_answer && d.category === "comparison") || data[0];
+  renderChips(); renderList(); renderDetail();
+});
+</script>
+</body>
+</html>
