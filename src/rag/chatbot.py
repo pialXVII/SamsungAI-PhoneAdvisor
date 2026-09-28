@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import hashlib
 import logging
+import re
 from dataclasses import dataclass, field
 
 from sqlalchemy.orm import Session
@@ -35,7 +36,7 @@ from src.database.repository import (
 from src.llm.provider import get_llm
 
 from .documents import build_corpus
-from .query_analysis import Intent, QueryAnalysis, analyze
+from .query_analysis import Intent, QueryAnalysis, analyze, normalize_model_names
 from .vector_store import VectorStore
 
 logger = logging.getLogger(__name__)
@@ -64,6 +65,88 @@ _ASPECT_TO_DOCUMENTS: dict[str, tuple[str, ...]] = {
     "connectivity": ("Connectivity and features",),
     "price": ("Pricing", "Overview"),
 }
+
+
+# --------------------------------------------------------------------------
+# Scope: questions the catalogue cannot answer
+# --------------------------------------------------------------------------
+# Without these checks an out-of-domain question ("camera specs of the iPhone
+# 15 Pro", "best laptop for programming") was answered with whichever Samsung
+# passages were nearest, because the similarity floor alone cannot tell them
+# apart: such questions score 0.3-0.6, the same band as genuine questions that
+# name no model. Declining needs a positive signal that the subject is
+# something other than a phone in the database.
+
+# Other phone makers and their product lines.
+_OTHER_BRANDS = re.compile(
+    r"\b(?:apple|iphones?|google pixel|pixel \d+|oneplus|xiaomi|redmi|poco|"
+    r"huawei|honor|oppo|vivo|realme|motorola|moto [a-z]\d*|nokia|sony|xperia|"
+    r"nothing phone|asus|zenfone|rog phone|lg|htc|tecno|infinix|fairphone)\b"
+)
+
+# Products that are not phones, including Samsung's own.
+_OTHER_PRODUCTS = re.compile(
+    r"\b(?:laptops?|notebooks?|macbooks?|tablets?|ipads?|galaxy tab|tab s\d+|"
+    r"smartwatch(?:es)?|galaxy watch|watch \d+|galaxy buds|earbuds|"
+    r"televisions?|tvs?)\b"
+)
+
+# Samsung model codes ("S20", "A15", "Note 20"); one the catalogue does not
+# contain means the question is about a phone that is not in the database.
+_MODEL_CODE = re.compile(r"\b(?:[samz]\d{2,3}|note\s?\d{1,2})\b")
+
+# Words that place a question inside the phone domain even when no model is
+# named ("which phones have wireless charging?").
+_PHONE_WORDS = re.compile(
+    r"\b(?:phones?|samsung|galaxy|mobiles?|smartphones?|handsets?|"
+    r"foldables?|flagships?)\b"
+)
+
+_DECLINE_SUBJECTS = {
+    "brand": "phones from other manufacturers",
+    "product": "products other than Samsung phones",
+    "model": "that Samsung model",
+    "topic": "that topic",
+}
+
+
+def _out_of_scope(
+    query: str, analysis: QueryAnalysis, vocabulary: set[str]
+) -> str | None:
+    """Why a question that resolved to no phone is outside the catalogue.
+
+    Only called when no phone in the database was named. Returns a key of
+    `_DECLINE_SUBJECTS`, or None when the question is in scope.
+    """
+    lowered = query.lower()
+    if _OTHER_BRANDS.search(lowered):
+        return "brand"
+    if _OTHER_PRODUCTS.search(lowered):
+        return "product"
+    for match in _MODEL_CODE.finditer(normalize_model_names(lowered)):
+        if match.group(0).replace(" ", "") not in vocabulary:
+            return "model"
+    # An open question with no phone vocabulary at all ("who won the World
+    # Cup?", "how much does a Tesla cost?"). Price words do not count: every
+    # product has a price. Superlatives, recommendations and list requests
+    # are about the catalogue by construction, so they are kept.
+    if analysis.intent == Intent.GENERAL and not _PHONE_WORDS.search(lowered):
+        if not [a for a in analysis.aspects if a != "price"]:
+            return "topic"
+    return None
+
+
+def _decline_message(reason: str, phones: list[Phone]) -> str:
+    names = ", ".join(p.name.replace("Samsung Galaxy ", "") for p in phones)
+    return (
+        f"Sorry, I don't have information about {_DECLINE_SUBJECTS[reason]}. "
+        f"My database only covers {len(phones)} Samsung Galaxy phones: {names}. "
+        "Ask me about their displays, cameras, batteries, processors or prices."
+    )
+
+
+# Words that separate the models in a comparison ("S23 vs S23 Ultra").
+_COMPARISON_SPLIT = re.compile(r"\b(?:vs|versus|or|and|than|to|with)\b|[,;/]")
 
 
 def _document_aspects(aspects: list[str] | None) -> set[str]:
@@ -193,8 +276,28 @@ class SamsungChatbot:
         aspect = analysis.primary_aspect or "battery"
 
         if aspect == "price":
-            ranked = cheapest_phones(session, limit=6)
-            header = "Samsung phones ranked from cheapest to most expensive (EUR):"
+            currency = analysis.currency
+            if currency == "EUR" and not analysis.higher_is_better:
+                ranked = cheapest_phones(session, limit=6)
+            else:
+                # Most expensive first, or a currency other than EUR: rank the
+                # lowest listing in that currency, ties broken like
+                # top_by_column (newest, then name).
+                def lowest(phone: Phone) -> float | None:
+                    amounts = [pr.amount for pr in phone.prices if pr.currency == currency]
+                    return min(amounts) if amounts else None
+
+                listed = [p for p in get_all_phones(session) if lowest(p) is not None]
+                listed.sort(key=lambda p: (p.name,))
+                listed.sort(key=lambda p: -(p.release_year or 0))
+                listed.sort(key=lowest, reverse=analysis.higher_is_better)
+                ranked = listed[:6]
+            order = (
+                "most expensive to cheapest"
+                if analysis.higher_is_better
+                else "cheapest to most expensive"
+            )
+            header = f"Samsung phones ranked from {order} ({currency}):"
             describe = lambda p: (  # noqa: E731
                 f"{p.name}: "
                 + (
@@ -202,7 +305,7 @@ class SamsungChatbot:
                     or "no listing"
                 )
             )
-        elif aspect == "performance" or analysis.ranking_column is None:
+        elif analysis.ranking_column is None:
             # No single numeric column captures "performance", so hand the model
             # the chipset of each phone newest-first and let it reason.
             ranked = top_by_column(session, "release_year", limit=8)
@@ -224,8 +327,10 @@ class SamsungChatbot:
                 "main_camera_mp": ("main camera resolution", "{} MP"),
                 "display_size_inches": ("display size", "{} inches"),
                 "max_storage_gb": ("maximum storage", "{} GB"),
+                "max_ram_gb": ("maximum RAM", "{} GB"),
+                "selfie_camera_mp": ("selfie camera resolution", "{} MP"),
                 "charging_watts": ("charging speed", "{} W"),
-                "weight_g": ("weight, lightest first", "{} g"),
+                "weight_g": ("weight", "{} g"),
             }.get(column, (column, "{}"))
             direction = "highest" if analysis.higher_is_better else "lowest"
             header = f"Samsung phones ranked by {label[0]} ({direction} first):"
@@ -268,6 +373,32 @@ class SamsungChatbot:
         return "\n\n".join(blocks), sources
 
     @staticmethod
+    def _mentioned_phones(
+        session: Session, query: str, vocabulary: set[str]
+    ) -> list[Phone]:
+        """Every catalogue phone the question names, nicknames included.
+
+        Two fixes over a plain `extract_mentioned_phones` call:
+
+        * nicknames and misspellings ("S23U", "Fold 5", "S23 Ultar") are
+          rewritten canonically first;
+        * each side of a comparison is resolved on its own. On the whole
+          sentence, "S23 vs S23 Ultra" resolved to the Ultra alone, because the
+          plain S23's tokens are a subset of the Ultra's and it was dropped as
+          a less specific duplicate.
+        """
+        text = normalize_model_names(query, vocabulary)
+        whole = extract_mentioned_phones(session, text)
+
+        per_part: list[Phone] = []
+        for part in _COMPARISON_SPLIT.split(text):
+            for phone in extract_mentioned_phones(session, part):
+                if phone not in per_part:
+                    per_part.append(phone)
+
+        return per_part[:4] if len(per_part) > len(whole) else whole
+
+    @staticmethod
     def _catalogue_context(session: Session) -> tuple[str, list[dict]]:
         phones = get_all_phones(session)
         lines = [
@@ -292,8 +423,24 @@ class SamsungChatbot:
             )
 
         with session_scope() as session:
-            mentioned = extract_mentioned_phones(session, query)
+            catalogue = get_all_phones(session)
+            vocabulary = {
+                token
+                for phone in catalogue
+                for token in re.split(r"[^a-z0-9]+", phone.name.lower())
+                if token
+            }
+            mentioned = self._mentioned_phones(session, query, vocabulary)
             analysis = analyze(query, mentioned_phone_count=len(mentioned))
+
+            if not mentioned and analysis.intent != Intent.LIST:
+                reason = _out_of_scope(query, analysis, vocabulary)
+                if reason:
+                    return ChatResponse(
+                        answer=_decline_message(reason, catalogue),
+                        intent=Intent.GENERAL.value,
+                        aspects=analysis.aspects,
+                    )
 
             if analysis.intent == Intent.SUPERLATIVE:
                 context, sources, ranked = self._ranking_context(session, analysis)
@@ -402,9 +549,13 @@ class SamsungChatbot:
         aspect = analysis.primary_aspect
 
         if analysis.intent == Intent.SUPERLATIVE:
+            # The ranking already runs in the direction asked ("smallest",
+            # "heaviest"), so the first entry is the answer either way.
+            winner = f", {phones[0].name}," if phones else ""
             return (
                 f"Based on the specification database:\n\n{context}\n\n"
-                f"The first entry is the strongest on {aspect or 'this metric'}."
+                f"The first entry{winner} answers the question on "
+                f"{aspect or 'this metric'}."
             )
 
         if analysis.intent == Intent.COMPARISON and len(phones) >= 2:

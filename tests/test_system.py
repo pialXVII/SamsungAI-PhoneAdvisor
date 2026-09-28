@@ -32,7 +32,12 @@ from src.database.repository import (
     get_all_phones,
     top_by_column,
 )
-from src.rag.query_analysis import Intent, analyze, detect_aspects
+from src.rag.query_analysis import (
+    Intent,
+    analyze,
+    detect_aspects,
+    normalize_model_names,
+)
 from src.scraper.parsers import (
     parse_battery_mah,
     parse_camera_mp,
@@ -137,6 +142,67 @@ class TestQueryAnalysis(unittest.TestCase):
         self.assertEqual(analysis.intent, Intent.SUPERLATIVE)
         self.assertFalse(analysis.higher_is_better)
 
+    def test_superlative_direction_follows_the_wording(self):
+        # The direction used to come only from the aspect's idea of "better",
+        # so these returned the opposite end of the ranking.
+        self.assertFalse(analyze("Which phone has the smallest battery?").higher_is_better)
+        self.assertTrue(analyze("Which is the heaviest phone?").higher_is_better)
+        self.assertTrue(analyze("Which phone is the most expensive?").higher_is_better)
+        self.assertFalse(analyze("What is the cheapest Samsung phone?").higher_is_better)
+        self.assertFalse(analyze("Which is the least expensive phone?").higher_is_better)
+
+    def test_metric_specific_ranking_columns(self):
+        self.assertEqual(
+            analyze("Which phone has the best selfie camera?").ranking_column,
+            "selfie_camera_mp",
+        )
+        self.assertEqual(
+            analyze("Which phone has the most RAM?").ranking_column, "max_ram_gb"
+        )
+        # "charging" used to count towards battery capacity.
+        charging = analyze("What is the highest wattage charging on any phone?")
+        self.assertEqual(charging.ranking_column, "charging_watts")
+        self.assertEqual(analyze("What is the cheapest phone in US dollars?").currency, "USD")
+        self.assertEqual(analyze("What is the cheapest phone?").currency, "EUR")
+
+    def test_casual_price_phrasings_route_to_price(self):
+        for question in ("How much is the Z Flip5?", "What would the S24 set me back?"):
+            with self.subTest(question=question):
+                analysis = analyze(question, mentioned_phone_count=1)
+                self.assertEqual(analysis.intent, Intent.PRICE)
+        # "how much" about a measurement is not a price question.
+        weight = analyze("How much does the S24 weigh?", mentioned_phone_count=1)
+        self.assertEqual(weight.intent, Intent.SPEC_LOOKUP)
+        self.assertEqual(weight.primary_aspect, "design")
+        ram = analyze("How much RAM does the S24 have?", mentioned_phone_count=1)
+        self.assertEqual(ram.intent, Intent.SPEC_LOOKUP)
+
+    def test_should_i_buy_is_a_recommendation(self):
+        # "which phone" is also a superlative trigger.
+        analysis = analyze("Which phone should I buy for storage?")
+        self.assertEqual(analysis.intent, Intent.RECOMMENDATION)
+        self.assertEqual(analysis.primary_aspect, "storage")
+
+    def test_nicknames_are_normalised(self):
+        vocabulary = {"samsung", "galaxy", "s23", "ultra", "fe", "z", "fold5", "a54"}
+        cases = {
+            "S23U camera": "s23 ultra camera",
+            "the s24ultra": "the s24 ultra",
+            "S23 Fan Edition": "s23 fe",
+            "Galaxy S-22": "galaxy s22",
+            "A-54": "a54",
+            "Fold 5": "z fold5",
+            "Z Flip 5": "z flip5",
+            "Galaxy S23 Ultar": "galaxy s23 ultra",
+        }
+        for raw, expected in cases.items():
+            with self.subTest(raw=raw):
+                self.assertEqual(normalize_model_names(raw, vocabulary), expected)
+        # Ordinary words are not "corrected" towards model names.
+        self.assertEqual(
+            normalize_model_names("which is lighter", vocabulary), "which is lighter"
+        )
+
 
 class TestDatabase(unittest.TestCase):
     """Storage and lookup against the live scraped database."""
@@ -239,9 +305,69 @@ class TestRAG(unittest.TestCase):
         self.assertEqual(response.intent, "comparison")
         self.assertEqual(len(response.phones), 2)
 
+    def assertDeclined(self, response):
+        self.assertIn("don't have information", response.answer)
+        self.assertEqual(response.intent, "general")
+        self.assertEqual(response.phones, [])
+        # Nothing was retrieved, so no Samsung specs are passed off as an answer.
+        self.assertEqual(response.sources, [])
+
     def test_unknown_topic_is_declined_rather_than_guessed(self):
-        response = self.bot.chat("What is the price of a Toyota Corolla?")
-        self.assertTrue(response.answer)
+        self.assertDeclined(self.bot.chat("What is the price of a Toyota Corolla?"))
+
+    def test_other_brands_and_products_are_declined(self):
+        for question in (
+            "What are the camera specs of the iPhone 15 Pro?",
+            "What is the best laptop for programming?",
+            "What is the battery life of the Galaxy Watch 6?",
+        ):
+            with self.subTest(question=question):
+                self.assertDeclined(self.bot.chat(question))
+
+    def test_samsung_model_missing_from_the_database_is_declined(self):
+        self.assertDeclined(self.bot.chat("How big is the Galaxy S20 battery?"))
+
+    def test_in_domain_questions_without_a_model_are_not_declined(self):
+        for question in (
+            "Which Samsung phones support wireless charging?",
+            "Tell me about foldable phones",
+            "Is 5G worth it?",
+        ):
+            with self.subTest(question=question):
+                response = self.bot.chat(question)
+                self.assertNotIn("don't have information", response.answer)
+                self.assertTrue(response.sources)
+
+    def test_nicknames_resolve_to_the_right_phone(self):
+        for question, expected in (
+            ("How heavy is the S23U?", "Samsung Galaxy S23 Ultra"),
+            ("How big is the Fold 5 screen?", "Samsung Galaxy Z Fold5"),
+            ("How long does the Galaxy S-22 battery last?", "Samsung Galaxy S22 5G"),
+        ):
+            with self.subTest(question=question):
+                self.assertEqual(self.bot.chat(question).phones, [expected])
+
+    def test_same_line_comparison_keeps_both_models(self):
+        # The plain S23's tokens are a subset of the Ultra's, so resolving the
+        # whole sentence at once dropped it.
+        response = self.bot.chat("Galaxy S23 vs Galaxy S23 Ultra camera?")
+        self.assertEqual(response.intent, "comparison")
+        self.assertEqual(
+            set(response.phones), {"Samsung Galaxy S23", "Samsung Galaxy S23 Ultra"}
+        )
+
+    def test_superlative_ranks_in_the_direction_asked(self):
+        response = self.bot.chat("Which phone has the smallest battery?")
+        with session_scope() as session:
+            smallest = top_by_column(
+                session, "battery_capacity_mah", limit=1, descending=False
+            )[0].name
+        self.assertEqual(response.phones[0], smallest)
+
+    def test_casual_price_question_answers_with_prices(self):
+        response = self.bot.chat("How much is the Galaxy S24?")
+        self.assertEqual(response.intent, "price")
+        self.assertTrue(any(s["aspect"] == "Pricing" for s in response.sources))
 
 
 class TestAgentBackends(unittest.TestCase):
