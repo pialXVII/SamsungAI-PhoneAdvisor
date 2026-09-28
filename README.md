@@ -8,6 +8,13 @@ FastAPI service with a browser UI.
 
 Everything runs locally. No paid API keys are required at any point.
 
+Built as a take-home technical assessment (Aug-Sep 2026), then extended with a
+measured evaluation set, Docker packaging and CI.
+
+**Evaluation (held-out test split, template mode):** intent accuracy 78.3% → 95.7%,
+retrieval hit@1 90.9% → 100%, answer fact recall 90.7% → 98.6%, 0% false declines.
+Details and caveats: [eval/results/SUMMARY.md](eval/results/SUMMARY.md).
+
 Demonstration Video: https://drive.google.com/file/d/1SZlPPyFpmD1KtO8cnyuj8hmZKPmgcw06/view?usp=sharing
 
 ---
@@ -81,7 +88,8 @@ src/
     schemas.py               Pydantic contracts
     web.py                   Browser UI
 scripts/                     scrape · demo · chat · run_api
-tests/test_system.py         34 tests
+tests/test_system.py         49 tests
+eval/                        labelled question set, harness and results
 ```
 
 ---
@@ -334,7 +342,8 @@ cached so later requests skip the slow retry.
 python tests/test_system.py
 ```
 
-37 tests across six areas: spec parsers, intent routing, database queries and
+49 tests across seven areas: spec parsers, intent routing (including model
+nicknames, casual price wording and out-of-scope declines), database queries and
 name resolution, RAG retrieval, agent-backend selection, agent workflows, and
 the HTTP contract. The LLM is disabled throughout — the tests check the
 deterministic machinery, not the wording a generative model happens to produce.
@@ -342,10 +351,50 @@ With no LLM, CrewAI reports itself unavailable and the suite exercises the
 native fallback path.
 
 ```
-Ran 37 tests in 31.762s
+Ran 49 tests in 33.5s
 
 OK
 ```
+
+---
+
+## Evaluation
+
+Unit tests check the machinery; the evaluation set measures answer quality.
+[eval/](eval/README.md) holds 188 hand-templated questions (lookups, prices,
+comparisons, rankings, recommendations, nicknames and out-of-domain questions),
+each with gold intent, phone, aspect and the facts a correct answer must contain,
+all verified against the database. The set is split 50/50 into dev and test;
+fixes were developed on dev only.
+
+```bash
+python -m eval.build_dataset --check
+python -m eval.run_eval --mode template --split test --out results.json
+python -m eval.run_eval --mode llm --split test --out results_llm.json   # needs the local LLM
+```
+
+The runner uses a throwaway SQLite database seeded from `data/scraped_phones.json`
+and never touches the configured database. Results and the before/after table are in
+[eval/results/SUMMARY.md](eval/results/SUMMARY.md).
+
+---
+
+## Docker and CI
+
+```bash
+docker build -t phone-advisor . && docker run --rm -p 8000:7860 phone-advisor
+docker compose up --build                                   # http://127.0.0.1:8000
+docker compose --profile mysql up --build app-mysql         # with MySQL 8
+```
+
+The image uses CPU PyTorch, SQLite seeded from the snapshot on first start,
+template answers (`USE_LLM=false`) and the native agent backend, so it needs no
+secrets. It listens on port 7860 as a non-root user, which is what Hugging Face
+Spaces (Docker SDK) expects. Set `USE_LLM=true` to enable Qwen2.5-1.5B.
+
+GitHub Actions ([.github/workflows/ci.yml](.github/workflows/ci.yml)) runs the unit
+tests and the template-mode evaluation on every push, uploads the evaluation
+results, and builds the Docker image.
 
 ---
 
