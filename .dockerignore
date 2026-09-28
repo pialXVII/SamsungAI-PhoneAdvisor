@@ -1,0 +1,39 @@
+# Keep the build context small, and keep secrets and local state out of images.
+
+# VCS and CI
+.git
+.github
+.gitignore
+.dockerignore
+
+# Credentials: a developer's .env points at their own MySQL and must never be
+# baked into an image. The example file is harmless and documents the knobs.
+.env
+.env.*
+!.env.example
+
+# Python and editor clutter
+**/__pycache__
+**/*.py[cod]
+*.egg-info
+.venv
+venv
+env
+.cache
+.vscode
+.idea
+*.log
+
+# Generated state: the container keeps its own under /home/user/state, built on
+# first start by scripts/bootstrap.py, so a developer's local copy (possibly
+# seeded from a live scrape or their MySQL) would only be dead weight.
+data/*.db
+data/*.db-journal
+data/vector_index
+
+# Not needed at run time
+*.pdf
+Demonstration Video
+eval-results.json
+Dockerfile
+docker-compose.yml

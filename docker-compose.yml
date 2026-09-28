@@ -1,0 +1,93 @@
+# Local container stack.
+#
+#   docker compose up --build                            # SQLite  -> http://127.0.0.1:8000
+#   docker compose --profile mysql up --build app-mysql  # MySQL 8 -> http://127.0.0.1:8001
+#
+# `--profile mysql up` without a service name starts both apps side by side.
+#
+# The MySQL credentials are throwaway examples for a local container, not
+# secrets. Override them with MYSQL_* variables in the shell. The app's own DB_*
+# and USE_LLM settings are written out literally below, on purpose: Compose
+# substitutes ${VARS} from a .env file next to this one, and the project's .env
+# is meant for running *outside* Docker (DB_HOST=127.0.0.1, USE_LLM=true), which
+# would silently point the container at the wrong database or start a 3 GB model
+# download on CPU.
+#
+# Enabling the LLM: set USE_LLM: "true" in the service's environment (or in a
+# docker-compose.override.yml). The Qwen weights then persist in the hf-cache
+# volume across restarts.
+
+x-app: &app
+  build: .
+  image: phone-advisor:local
+  restart: unless-stopped
+
+x-app-env: &app-env
+  USE_LLM: "false"
+  AGENT_FRAMEWORK: native
+
+services:
+  app:
+    <<: *app
+    ports:
+      - "8000:7860"
+    environment:
+      <<: *app-env
+      DB_BACKEND: sqlite
+    volumes:
+      # SQLite file and FAISS index survive `docker compose down` (not `down -v`).
+      - app-state:/home/user/state
+      # Starts as a copy of the MiniLM baked into the image, and keeps any
+      # model downloaded later (the LLM) across container rebuilds.
+      - hf-cache:/home/user/.cache/huggingface
+
+  app-mysql:
+    <<: *app
+    profiles: [mysql]
+    ports:
+      - "8001:7860"
+    environment:
+      <<: *app-env
+      DB_BACKEND: mysql
+      DB_HOST: mysql
+      DB_PORT: "3306"
+      DB_USER: ${MYSQL_USER:-phoneadvisor}
+      DB_PASSWORD: ${MYSQL_PASSWORD:-phoneadvisor}
+      DB_NAME: ${MYSQL_DATABASE:-samsung_phones}
+    volumes:
+      # Separate from the SQLite app's state: each index is fingerprinted to
+      # its own database's row ids.
+      - app-mysql-state:/home/user/state
+      - hf-cache:/home/user/.cache/huggingface
+    depends_on:
+      mysql:
+        # Wait for the real server, not just the container: MySQL's first
+        # start runs an init pass on a temporary server that refuses TCP.
+        condition: service_healthy
+
+  mysql:
+    image: mysql:8.4
+    profiles: [mysql]
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-samsung_phones}
+      MYSQL_USER: ${MYSQL_USER:-phoneadvisor}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-phoneadvisor}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-phoneadvisor-root}
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    healthcheck:
+      # -h 127.0.0.1 forces TCP, which only succeeds once initialisation is done.
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u root -p\"$${MYSQL_ROOT_PASSWORD}\" --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+    volumes:
+      - mysql-data:/var/lib/mysql
+    # No host port: only app-mysql needs to reach it, and publishing 3306 would
+    # collide with a local XAMPP MySQL. Add "3307:3306" to inspect it directly.
+
+volumes:
+  app-state:
+  app-mysql-state:
+  hf-cache:
+  mysql-data:

@@ -1,0 +1,115 @@
+# Continuous integration: unit tests + offline evaluation, and a Docker build.
+#
+# Everything runs on CPU against a throwaway SQLite database seeded from the
+# committed data/scraped_phones.json, so CI never touches GSMArena or a real
+# database, and USE_LLM=false keeps it deterministic (no 3 GB model download).
+
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      DB_BACKEND: sqlite
+      USE_LLM: "false"
+      AGENT_FRAMEWORK: native
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      # Generated state goes outside the checkout (the runner context is not
+      # available in job-level env, hence GITHUB_ENV).
+      - name: Point generated state at the runner temp dir
+        run: |
+          echo "SQLITE_PATH=$RUNNER_TEMP/state/samsung_phones.db" >> "$GITHUB_ENV"
+          echo "VECTOR_INDEX_PATH=$RUNNER_TEMP/state/vector_index" >> "$GITHUB_ENV"
+          echo "EVAL_SCRATCH_DIR=$RUNNER_TEMP/state/eval" >> "$GITHUB_ENV"
+          echo "HF_HOME=$HOME/.cache/huggingface" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
+
+      - name: Cache Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-${{ runner.os }}-all-MiniLM-L6-v2
+
+      # CPU torch first, so sentence-transformers does not pull the CUDA build.
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-ci.txt
+
+      - name: Seed SQLite and build the index
+        run: python scripts/bootstrap.py
+
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+
+      # Template (USE_LLM=false) evaluation on every split. Scores are reported,
+      # not gated: the step fails only if the harness itself crashes.
+      # Run as a module: `python eval/run_eval.py` cannot import the `eval`
+      # package (ModuleNotFoundError), because only eval/ lands on sys.path.
+      - name: Evaluation (template mode)
+        id: eval
+        if: hashFiles('eval/run_eval.py') != ''
+        shell: bash
+        run: |
+          set +e
+          python -m eval.run_eval --mode template --split all --out eval-results.json 2>&1 | tee eval.log
+          code=${PIPESTATUS[0]}
+          set -e
+          if [ "$code" -ne 0 ]; then
+            if grep -q "^Traceback" eval.log; then
+              echo "::error::Evaluation crashed (exit $code)"
+              exit "$code"
+            fi
+            echo "::warning::Evaluation exited $code without a traceback; treating as a score report"
+          fi
+
+      - name: Upload evaluation results
+        if: always() && steps.eval.outcome != 'skipped'
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: |
+            eval-results.json
+            eval-results.md
+            eval.log
+          if-no-files-found: ignore
+
+  docker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Build image (no push)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          tags: phone-advisor:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

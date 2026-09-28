@@ -1,0 +1,43 @@
+# Runtime + test dependencies for CI and the Docker image.
+#
+# Same as requirements.txt minus CrewAI, plus httpx. Install CPU-only torch
+# FIRST so pip does not pull the ~2.5 GB CUDA build:
+#
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-ci.txt
+#
+# Why CrewAI is left out: it brings ~70 packages (chromadb, lancedb,
+# opentelemetry, ...) and only runs when an LLM is loaded. CI and the default
+# container run with USE_LLM=false, where src/agents/crewai_backend.py reports
+# CrewAI unavailable and the native orchestrator answers instead, so installing
+# it would add minutes and hundreds of MB without exercising any of it. Build
+# the image with --build-arg WITH_CREWAI=true to include it.
+
+# --- Scraping -------------------------------------------------------------
+requests>=2.32.0
+beautifulsoup4>=4.13.0
+lxml>=5.0.0
+
+# --- Database -------------------------------------------------------------
+SQLAlchemy>=2.0.30
+PyMySQL>=1.1.0          # docker compose --profile mysql
+cryptography>=42.0.0    # PyMySQL caching_sha2_password auth (MySQL 8 default)
+
+# --- RAG / open-source models --------------------------------------------
+torch>=2.2.0            # satisfied by the CPU wheel installed beforehand
+transformers>=4.44.0
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+
+# --- API ------------------------------------------------------------------
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+python-dotenv>=1.0.0
+
+# --- Tests ----------------------------------------------------------------
+# FastAPI's TestClient needs httpx. Without it tests/test_system.py skips the
+# whole TestAPI class instead of failing, so CI would go green while testing
+# less — listed explicitly rather than relying on a transitive install.
+httpx>=0.27.0

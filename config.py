@@ -27,6 +27,21 @@ def _env(key: str, default: str) -> str:
     return value if value not in (None, "") else default
 
 
+def _env_path(key: str, default: Path) -> Path:
+    """Filesystem path from the environment, else a repo-relative default.
+
+    Generated artifacts (the SQLite file, the FAISS index) live in `data/` for
+    local runs, but a container needs them on a writable volume away from the
+    source tree. Relative overrides resolve against the repo root rather than
+    the working directory, so the same value works from any launch location.
+    """
+    value = os.getenv(key)
+    if value in (None, ""):
+        return default
+    path = Path(value).expanduser()
+    return path if path.is_absolute() else BASE_DIR / path
+
+
 # --------------------------------------------------------------------------
 # Database
 # --------------------------------------------------------------------------
@@ -40,6 +55,8 @@ DB_PORT = int(_env("DB_PORT", "3306" if DB_BACKEND == "mysql" else "5432"))
 DB_USER = _env("DB_USER", "root")
 DB_PASSWORD = _env("DB_PASSWORD", "")
 DB_NAME = _env("DB_NAME", "samsung_phones")
+# Only used when DB_BACKEND=sqlite. DATABASE_URL still wins over it.
+SQLITE_PATH = _env_path("SQLITE_PATH", DATA_DIR / f"{DB_NAME}.db")
 
 
 def build_database_url(include_database: bool = True) -> str:
@@ -56,7 +73,10 @@ def build_database_url(include_database: bool = True) -> str:
     name = DB_NAME if include_database else ""
 
     if DB_BACKEND == "sqlite":
-        return f"sqlite:///{DATA_DIR / (DB_NAME + '.db')}"
+        # SQLite creates the file on connect but not its parent directory, and
+        # an overridden SQLITE_PATH may point at one that does not exist yet.
+        SQLITE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        return f"sqlite:///{SQLITE_PATH}"
     if DB_BACKEND == "mysql":
         password = f":{DB_PASSWORD}" if DB_PASSWORD else ""
         return f"mysql+pymysql://{DB_USER}{password}@{DB_HOST}:{DB_PORT}/{name}?charset=utf8mb4"
@@ -132,7 +152,7 @@ LLM_MIN_FREE_VRAM_GB = float(_env("LLM_MIN_FREE_VRAM_GB", "4.0"))
 USE_LLM = _env("USE_LLM", "true").lower() in ("1", "true", "yes")
 
 RAG_TOP_K = int(_env("RAG_TOP_K", "5"))
-VECTOR_INDEX_PATH = DATA_DIR / "vector_index"
+VECTOR_INDEX_PATH = _env_path("VECTOR_INDEX_PATH", DATA_DIR / "vector_index")
 
 # --------------------------------------------------------------------------
 # Multi-agent system
