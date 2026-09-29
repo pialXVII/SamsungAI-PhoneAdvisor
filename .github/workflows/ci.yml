@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     env:
       DB_BACKEND: sqlite
@@ -29,7 +29,7 @@ jobs:
       AGENT_FRAMEWORK: native
       PYTHONUNBUFFERED: "1"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # Generated state goes outside the checkout (the runner context is not
       # available in job-level env, hence GITHUB_ENV).
@@ -40,14 +40,14 @@ jobs:
           echo "EVAL_SCRATCH_DIR=$RUNNER_TEMP/state/eval" >> "$GITHUB_ENV"
           echo "HF_HOME=$HOME/.cache/huggingface" >> "$GITHUB_ENV"
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements-ci.txt
 
       - name: Cache Hugging Face models
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/huggingface
           key: hf-${{ runner.os }}-all-MiniLM-L6-v2
@@ -88,7 +88,7 @@ jobs:
 
       - name: Upload evaluation results
         if: always() && steps.eval.outcome != 'skipped'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: eval-results
           path: |
@@ -98,15 +98,15 @@ jobs:
           if-no-files-found: ignore
 
   docker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: docker/setup-buildx-action@v3
+      - uses: docker/setup-buildx-action@v4
 
       - name: Build image (no push)
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           push: false
